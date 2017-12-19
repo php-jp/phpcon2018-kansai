@@ -1,0 +1,5 @@
+/public/assets/*.html
+/public/assets/*.css
+/node_modules
+/.idea
+.DS_Store
