@@ -12,6 +12,10 @@ body {
   width: 980px;
 }
 
+h2 {
+  letter-spacing: 5px;
+}
+
 .home-Title {
   background-color: #04C3AE;
   width: auto;
@@ -87,7 +91,7 @@ body {
     width: 112px;
     height: 98px;
     top: 600px;
-    right: 500px;
+    right: 33%;
     z-index: 3;
     background-image: url("/images/elephant.png");
     background-repeat: no-repeat;
@@ -97,7 +101,7 @@ body {
 .home-Description {
   width:auto;
   background-color: #004DA4;
-  padding: 100px 0 70px 0;
+  padding: 130px 0 70px 0;
   &_Past {
     background-color: #024690;
     border-radius: 100px;
@@ -126,61 +130,62 @@ body {
   h2 {
     margin-top: 0;
   }
-  .home-Share_SNS {
+  .home-Share_List {
     color: #004DA4;
+    margin-top: 30px;
     .home-Share_Twitter {
-      position: relative;
       display: inline-block;
-      padding: 10px 40px;
-      font-size: 16px;
-      background: #FAE800;
-      border-radius: 30px;
-      margin-right: 5px;
-      .fa-twitter {
-        position: absolute;
-        top: 65px;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        margin-left: auto;
-        margin-right: auto;
+      a {
+        text-decoration: none;
+        color: #004DA4;
+        position: relative;
+        display: block;
+        padding: 15px 45px;
+        font-size: 16px;
+        background: #FAE800;
+        border-radius: 30px;
+        margin-right: 5px;
       }
-    }
-    .home-Share_Twitter:before {
-      content: "";
-      position: absolute;
-      top: 100%;
-      left: 50%;
-      margin-left: -10px;
-      border: 10px solid transparent;
-      border-top: 15px solid #FAE800;
+      a:before {
+        content: "";
+        position: absolute;
+        display: block;
+        top: 100%;
+        left: 50%;
+        margin-left: -10px;
+        border: 10px solid transparent;
+        border-top: 15px solid #FAE800;
+      }
+      i {
+        margin-top: 20px;
+      }
     }
     .home-Share_Facebook {
-      position: relative;
       display: inline-block;
-      padding: 10px 40px;
-      font-size: 16px;
-      background: #FAE800;
-      border-radius: 30px;
-      margin-left: 5px;
-      .fa-facebook {
-        position: absolute;
-        top: 65px;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        margin-left: auto;
-        margin-right: auto;
+      a {
+        text-decoration: none;
+        color: #004DA4;
+        position: relative;
+        display: block;
+        padding: 15px 45px;
+        font-size: 16px;
+        background: #FAE800;
+        border-radius: 30px;
+        margin-left: 5px;
       }
-    }
-    .home-Share_Facebook:before {
-      content: "";
-      position: absolute;
-      top: 100%;
-      left: 50%;
-      margin-left: -10px;
-      border: 10px solid transparent;
-      border-top: 15px solid #FAE800;
+      a:before {
+        content: "";
+        position: absolute;
+        display: block;
+        top: 100%;
+        left: 50%;
+        margin-left: -10px;
+        border: 10px solid transparent;
+        border-top: 15px solid #FAE800;
+      }
+      i {
+        margin-top: 20px;
+      }
     }
   }
 }
@@ -195,13 +200,19 @@ body {
   }
   .home-Follow_SNS {
     margin-top: 40px;
+    a {
+      text-decoration: none;
+      color: #004DA4;
+    }
     .home-Follow_Twitter {
+      display: inline-block;
       background-color: #FAE800;
       border-radius: 30px;
       padding: 15px 30px;
       margin-right: 5px;
     }
     .home-Follow_Facebook {
+      display: inline-block;
       background-color: #FAE800;
       border-radius: 30px;
       padding: 15px 30px;
