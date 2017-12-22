@@ -1,10 +1,15 @@
 @charset "UTF-8";
 
+html {
+  background-color: #004DA4;
+}
 body {
   font-family: "Yu Gothic", "游ゴシック", YuGothic, "游ゴシック体", sans-serif;
   color: #fff;
   text-align: center;
   margin: auto;
+  font-size: 17px;
+  line-height: 1.8;
 }
 
 .st-Container {
@@ -125,6 +130,7 @@ h2 {
   }
   h2 {
     margin-top: 0;
+    margin-bottom: 40px;
   }
 }
 
