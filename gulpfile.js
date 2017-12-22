@@ -10,7 +10,6 @@ var browser = require("browser-sync")
 gulp.task("pug",function(){
     gulp.src(["./frontend/assets/tmpl/**/*.pug","!./frontend/assets/tmpl/**/_*.pug"])
         .pipe(plumber({errorHandler: notify.onError('<%= error.message %>')}))
-        .pipe(pleeease())
         .pipe(pug({
             pretty: true
         }))
@@ -21,8 +20,8 @@ gulp.task("pug",function(){
 gulp.task("sass",function(){
     gulp.src("./frontend/assets/scss/**/*.scss")
         .pipe(plumber({errorHandler: notify.onError('<%= error.message %>')}))
-        .pipe(pleeease())
         .pipe(sass())
+        .pipe(pleeease())
         .pipe(gulp.dest("./public/css"))
 });
 
