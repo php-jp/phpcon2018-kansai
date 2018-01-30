@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+    <title>parts_triangle</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Desktop(HD)" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(-999.000000, -683.000000)">
+        <path d="M1023,683 C1019.48196,685.728524 1017.14863,689.061857 1016,693 C1014.85137,696.938143 1014.85137,701.60481 1016,707 L999,701 C1001.71709,695.962179 1005.05043,691.962179 1009,689 C1012.94957,686.037821 1017.61624,684.037821 1023,683 Z" id="parts_triangle" fill="#F8E71C" transform="translate(1011.000000, 695.000000) scale(1, -1) translate(-1011.000000, -695.000000) "></path>
+    </g>
+</svg>
