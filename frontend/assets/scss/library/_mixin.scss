@@ -1,0 +1,52 @@
+@import "_variable";
+
+@mixin button($color:$clr_base,$backgound:$clr_accent) {
+  display: inline-block;
+  margin-left: 5px;
+  padding: 15px 30px;
+  border-radius: 30px;
+  text-decoration: none;
+  color: $color;
+  background: $backgound;
+  &:hover {
+    opacity: .8;
+  }
+}
+
+@mixin buttonSns($color:$clr_base,$backgound:$clr_accent) {
+  display: inline-block;
+  a {
+    display: block;
+    margin-right: 5px;
+    padding: 15px 45px;
+    font-size: 16px;
+    color: $color;
+    text-decoration: none;
+    position: relative;
+    background: $backgound;
+    border-radius: 30px;
+    &:hover {
+      opacity: .8;
+    }
+  }
+  a:before {
+    content: "";
+    display: block;
+    margin-left: -10px;
+    border: 10px solid transparent;
+    border-top: 15px solid #FAE800;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+  }
+  i {
+    margin-top: 20px;
+  }
+}
+
+@mixin secTitle($color:#fff) {
+  margin-top: 0;
+  margin-bottom: 40px;
+  letter-spacing: 5px;
+  color: $color;
+}
