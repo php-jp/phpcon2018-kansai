@@ -1,0 +1,11 @@
+@import "../library/_mixin";
+@import "../library/_variable";
+
+.st-Footer {
+  width: auto;
+  background-color: #004DA4;
+  padding: 15px 0;
+  a {
+    color: #fff;
+  }
+}
