@@ -2,7 +2,8 @@
   <section>
     <sec-hero></sec-hero>
     <sec-about></sec-about>
-    <sec-time-table></sec-time-table>
+    <sec-speakers></sec-speakers>
+    <!--<sec-time-table></sec-time-table>-->
     <sec-access></sec-access>
     <sec-sponsor></sec-sponsor>
     <sec-share></sec-share>
@@ -14,6 +15,7 @@
 <script>
   import secHero from '~/components/pages/Top/Hero.vue'
   import secAbout from '~/components/pages/Top/About.vue'
+  import secSpeakers from '~/components/pages/Top/Speakers.vue'
   import secTimeTable from '~/components/pages/Top/TimeTable.vue'
   import secAccess from '~/components/pages/Top/Access.vue'
   import secSponsor from '~/components/pages/Top/Sponsor.vue'
@@ -26,6 +28,7 @@
           secHero,
           secAbout,
           secTimeTable,
+          secSpeakers,
           secAccess,
           secSponsor,
           secShare,

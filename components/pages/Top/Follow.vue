@@ -5,16 +5,16 @@
       <h2 class="home-Follow_Title">Follow SNS</h2>
       <p class="home-Follow_Call">PHPカンファレンス関西のSNSアカウントをフォローして最新情報チェック！</p>
       <div class="home-Follow_SNS">
-        <a href="https://twitter.com/phpcon_kansai" target="_blank" class="home-Follow_Twitter">
+        <a href="https://twitter.com/phpcon_kansai" target="_blank" class="home-Follow_Btn">
           <i aria-hidden="true" class="fa fa-twitter fa-lg"></i>
           <span>&nbsp;twitterアカウント</span>
         </a>
-        <a href="https://www.facebook.com/pcon.kansai/" target="_blank" class="home-Follow_Facebook">
+        <a href="https://www.facebook.com/pcon.kansai/" target="_blank" class="home-Follow_Btn">
           <i aria-hidden="true" class="fa fa-facebook fa-lg"></i>
           <span>&nbsp;Facebookグループ</span>
         </a>
-        <a href="https://www.facebook.com/pcon.kansai/" target="_blank" class="home-Follow_Facebook">
-          <i aria-hidden="true" class="fa fa-facebook fa-lg"></i>
+        <a href="https://pushnate.com/register/4c2f96e1580435a7d19b8cbddb16bb40/" target="_blank" class="home-Follow_Btn">
+          <i aria-hidden="true" class="fa fa-comment fa-lg"></i>
           <span>&nbsp;お知らせを受け取る</span>
         </a>
       </div>
@@ -59,19 +59,12 @@
 
     &_SNS {
       margin-top: 40px;
-      .home-Follow_Twitter {
+      .home-Follow_Btn{
         @include button();
+        min-width: 12em;
         font-size: 12px;
-        padding: 15px 10px;
-        @include desktop() {
-          font-size: 17px;
-          padding: 15px 30px;
-        }
-      }
-      .home-Follow_Facebook {
-        @include button();
-        font-size: 12px;
-        padding: 15px 10px;
+        padding: 15px 2em;
+        margin: .5em;
         @include desktop() {
           font-size: 17px;
           padding: 15px 30px;
