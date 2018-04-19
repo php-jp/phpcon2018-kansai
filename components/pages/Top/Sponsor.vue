@@ -7,9 +7,9 @@
       <div class="home-Sponsor_Sponsor">
         <div class="home-Sponsor_Platinum">
           <h3>プラチナスポンサー</h3>
-          <div class="home-Sponsor_Large" v-for="(sponsor,index) in platinum" :key="index" :href="sponsor.link" target="_blank">
+          <a class="home-Sponsor_Large" v-for="(sponsor,index) in platinum" :key="index" :href="sponsor.link" target="_blank">
             <img class="home-Sponsor_Image" :src="'/images/sponsors/platinum/'+sponsor.image" alt="">
-          </div>
+          </a>
         </div>
         <div class="home-Sponsor_Gold">
           <h3>ゴールドスポンサー</h3>
@@ -19,15 +19,15 @@
         </div>
         <div class="home-Sponsor_Silver">
           <h3>シルバースポンサー</h3>
-          <div class="home-Sponsor_Small" v-for="(sponsor,index) in silver" :key="index" :href="sponsor.link" target="_blank">
+          <a class="home-Sponsor_Small" v-for="(sponsor,index) in silver" :key="index" :href="sponsor.link" target="_blank">
             <img class="home-Sponsor_Image" :src="'/images/sponsors/silver/'+sponsor.image" alt="">
-          </div>
+          </a>
         </div>
         <div class="home-Sponsor_Media">
           <h3>メディアスポンサー</h3>
-          <div class="home-Sponsor_Small" v-for="(sponsor,index) in media" :key="index" :href="sponsor.link" target="_blank">
+          <a class="home-Sponsor_Small" v-for="(sponsor,index) in media" :key="index" :href="sponsor.link" target="_blank">
             <img class="home-Sponsor_Image" :src="'/images/sponsors/media/'+sponsor.image" alt="">
-          </div>
+          </a>
         </div>
       </div>
     </div>
@@ -87,13 +87,14 @@
       display: inline-block;
       max-width: 330px;
       width: 100%;
-      height: 230px;
+      height: 330*0.5px;
       background: $clr_baseWhite;
       margin: 0 5px 30px 5px;
+      cursor: pointer;
 
       @include desktop() {
         max-width: 440px;
-        height: 260px;
+        height: 440*0.5px;
         margin: 0 15px 40px 15px;
       }
     }
@@ -102,13 +103,14 @@
       display: inline-block;
       max-width: 150px;
       width: 100%;
-      height: 110px;
+      height: 150*0.65px;
       background: $clr_baseWhite;
       margin: 0 5px 5px 5px;
+      cursor: pointer;
 
       @include desktop() {
         max-width: 215px;
-        height: 140px;
+        height: 215*0.65px;
         margin: 0 10px 10px 10px;
       }
     }
@@ -117,13 +119,14 @@
       display: inline-block;
       max-width: 100px;
       width: 100%;
-      height: 75px;
+      height: 100*0.65px;
+      cursor: pointer;
       background: $clr_baseWhite;
       margin: 0 5px 5px 5px;
 
       @include desktop() {
         max-width: 150px;
-        height: 120px;
+        height: 150*0.65px;
         margin: 0 10px 10px 10px;
       }
     }
