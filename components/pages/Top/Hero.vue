@@ -1,16 +1,14 @@
 <template>
   <div class="home-Title">
+    <div class="home-Title_Cloud1"></div>
+    <div class="home-Title_Cloud2"></div>
     <div class="st-Container">
-      <div class="home-Title_Cloud1"></div>
-      <div class="home-Title_Cloud2"></div>
       <div class="home-Title_Logo"></div>
-    </div>
-    <div class="home-Title_TextArea">
       <p class="home-Title_SalesCopy">関西PHPerの夏はこれがなくちゃ始まらない！</p>
       <p class="home-Title_Text">7.14 Sat グランフロント大阪</p>
     </div>
-    <div class="home-Title_Cloud3"></div>
-    <div class="home-Title_Cloud4"></div>
+    <div class="home-Title_CloudLeft"></div>
+    <div class="home-Title_CloudRight"></div>
     <div class="home-Title_Wave"></div>
     <div class="home-Title_Elephants">
       <a class="home-Title_Attention" href="#home-Wanted">スピーカー・スポンサー２次募集中！</a>
@@ -24,172 +22,143 @@
   @import "~assets/scss/library/_mixin.scss";
 
   .home-Title {
-    width: auto;
+    width: 100%;
     background-color: $clr_main;
     position: relative;
-
+    height: 580px;
     .st-Container {
-      position: relative;
-      padding: 0 50px;
-      height: calc(570px + 25vw);
+      padding: 0 20px;
+      height: 100%;
+      box-sizing: border-box;
       @include desktop() {
         max-width: 768px;
-        height: calc(450px + 30vw);
-        padding: 0;
       }
-
-      .home-Title_Cloud1 {
-        margin-left: 100px;
-        width: 20vw;
-        min-width: 84px;
-        height: 20vw;
-        min-height: 84px;
-        background-image: url("/images/airplaneCloud.png");
-        background-repeat: no-repeat;
-        background-size: contain;
-        position: absolute;
-        top: 280px;
-        left: -100px;
-        @include desktop() {
-          width: 200px;
-          height: 132px;
-          top: 400px;
-          left: -100px;
-        }
-      }
-
-      .home-Title_Cloud2 {
-        margin-right: 130px;
-        width: 20vw;
-        min-width: 84px;
-        height: 20vw;
-        min-height: 84px;
-        background-image: url("/images/airplane.png");
-        background-repeat: no-repeat;
-        background-size: contain;
-        position: absolute;
-        top: 70px;
-        right: -120px;
-        @include desktop() {
-          width: 180px;
-          height: 122px;
-          top: 100px;
-          right: -100px;
-        }
-      }
-
-      .home-Title_Logo {
-        z-index: 100;
-        margin-left: auto;
-        margin-right: auto;
-        width: 230px;
-        height: 270px;
-        background-image: url("/images/title.svg");
-        background-repeat: no-repeat;
-        background-size: contain;
-        position: absolute;
-        top: 50px;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        @include desktop() {
-          width: 335px;
-          height: 392px;
-        }
+    }
+    .home-Title_Cloud1 {
+      width: 20vw;
+      min-width: 80px;
+      height: 20vw;
+      min-height: 84px;
+      background-image: url("/images/airplane.png");
+      background-repeat: no-repeat;
+      background-size: contain;
+      position: absolute;
+      top: 60px;
+      right: 2vw;
+      @include desktop() {
+        width: 180px;
+        height: 122px;
+        top: 100px;
+        right: -100px;
       }
     }
 
-    .home-Title_TextArea {
+    .home-Title_Cloud2 {
+      margin-left: 100px;
+      width: 20vw;
+      min-width: 84px;
+      height: 20vw;
+      min-height: 84px;
+      background-image: url("/images/airplaneCloud.png");
+      background-repeat: no-repeat;
+      background-size: contain;
       position: absolute;
-      width: 70%;
-      top: 380px;
-      left: 50%;
-      transform: translateX(-50%);
-      z-index: 5;
+      top: 280px;
+      left: -100px;
       @include desktop() {
-        top: 480px;
+        width: 200px;
+        height: 132px;
+        top: 400px;
+        left: -100px;
+      }
+    }
+
+
+    .home-Title_Logo {
+      display: inline-block;
+      margin-top: 40px;
+      margin-bottom: 40px;
+      width: 230px;
+      height: 270px;
+      background-image: url("/images/title.svg");
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: center;
+      z-index: 100;
+      @include desktop() {
+        width: 335px;
       }
     }
 
     .home-Title_SalesCopy {
-      font-size: 16px;
-      @include desktop() {
-        font-size: 21px;
-      }
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
     }
 
     .home-Title_Text {
-      font-size: 18px;
+      font-size: 1.8rem;
+      font-weight: bold;
       @include desktop() {
-        font-size: 25px;
       }
     }
 
-    .home-Title_Cloud3 {
-      z-index: 1;
-      min-width: 80px;
+    .home-Title_CloudLeft {
+      min-width: 100px;
       width: 25vw;
-      min-height: 125px;
-      height: 35vw;
       background-image: url("/images/cloud_left.png");
       background-repeat: no-repeat;
       background-size: contain;
+      background-position: left bottom;
       position: absolute;
-      top: 515px;
+      bottom: 0;
       left: 0;
-      @include desktop() {
-        max-width: 480px;
-        width: 30vw;
-        height: 555px;
-        top: 360px;
+      &::before {
+        content: "";
+        display: block;
+        padding-top: 130%;
       }
     }
 
-    .home-Title_Cloud4 {
-      z-index: 1;
-      min-width: 80px;
+    .home-Title_CloudRight {
+      min-width: 100px;
       width: 25vw;
-      min-height: 125px;
-      height: 35vw;
       background-image: url("/images/cloud_right.png");
       background-repeat: no-repeat;
       background-size: contain;
+      background-position: right bottom;
       position: absolute;
-      top: 520px;
+      bottom: 0;
       right: 0;
-      @include desktop() {
-        max-width: 480px;
-        width: 30vw;
-        height: 555px;
-        top: 360px;
+      &::before {
+        content: "";
+        display: block;
+        padding-top: 130%;
       }
     }
 
     .home-Title_Wave {
-      z-index: 2;
+      z-index: 10;
       width: 100%;
-      height: 217px;
+      max-height: 90px;
       background-image: url("/images/ocean.png");
       background-repeat: repeat-x;
       background-size: contain;
       position: absolute;
-      top: calc(530px + 25vw);
-      max-height: 217px;
-      @include desktop() {
-        top: calc(390px + 30vw);
+      bottom: -30px;
+      &::before {
+        content: "";
+        display: block;
+        padding-top: 20%;
       }
     }
 
     .home-Title_Elephants {
-      z-index: 101;
+      z-index: 100;
       position: absolute;
-      top: calc(510px + 25vw);
       width: 100%;
       left: 50%;
       transform: translateX(-50%);
-      @include desktop() {
-        top: calc(390px + 30vw);
-      }
+      bottom: -35px;
     }
 
     .home-Title_Elephant {
@@ -209,9 +178,8 @@
     }
 
     .home-Title_Attention {
-      padding: 1rem;
-      border-radius: 1rem;
-      font-size: 14px;
+      padding: 1.5rem;
+      border-radius: 10px;
       font-weight: bold;
       color: $clr_base;
       text-decoration: none;
@@ -219,10 +187,6 @@
       background: $clr_accent;
       position: relative;
       top: -60px;
-      @include desktop() {
-        top: -60px;
-        font-size: 18px;
-      }
 
       &::after {
         display: inline-block;
