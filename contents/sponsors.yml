@@ -34,6 +34,9 @@ sponsors:
     - link: "https://samuraism.com/"
       image: "sp-g09.png"
       name: "株式会社サムライズム"
+    - link: "https://gamewith.co.jp/"
+      image: "sp-g10.png"
+      name: "株式会社GameWith"
   silver:
     - link: "https://www.phpexam.jp/"
       image: "sp-s01.png"
@@ -68,9 +71,6 @@ sponsors:
     - link: "https://www.creativevillage.ne.jp/"
       image: "sp-s11.png"
       name: "株式会社クリーク･アンド･リバー社"
-    - link: "https://gamewith.co.jp/"
-      image: "sp-s12.png"
-      name: "株式会社GameWith"
   media:
     - link: "https://chatbox-inc.com"
       image: "sp-m01.png"
