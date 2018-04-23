@@ -36,7 +36,7 @@
   @import "~assets/scss/library/_mixin.scss";
 
   .home-Description {
-    padding: 20% 0 70px 0;
+    padding: 70px 0 70px 0;
     width: auto;
     background-color: $clr_base;
 

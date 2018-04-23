@@ -1,7 +1,9 @@
 <template>
   <div class="home-Title">
-    <div class="home-Title_Cloud1"></div>
-    <div class="home-Title_Cloud2"></div>
+    <div class="home-Title_airPlane">
+      <div class="home-Title_Cloud1"></div>
+      <div class="home-Title_Cloud2"></div>
+    </div>
     <div class="st-Container">
       <div class="home-Title_Logo"></div>
       <p class="home-Title_SalesCopy">関西PHPerの夏はこれがなくちゃ始まらない！</p>
@@ -26,14 +28,24 @@
     background-color: $clr_main;
     position: relative;
     height: 580px;
+    @include desktop {
+      width: 100%;
+      height: 720px;
+    }
+
     .st-Container {
-      padding: 0 20px;
-      height: 100%;
-      box-sizing: border-box;
       @include desktop() {
         max-width: 768px;
       }
     }
+    .home-Title_airPlane {
+      @include desktop() {
+        margin: 0 auto;
+        max-width: 768px;
+        position: relative;
+      }
+    }
+
     .home-Title_Cloud1 {
       width: 20vw;
       min-width: 80px;
@@ -49,12 +61,11 @@
         width: 180px;
         height: 122px;
         top: 100px;
-        right: -100px;
+        right: 0;
       }
     }
 
     .home-Title_Cloud2 {
-      margin-left: 100px;
       width: 20vw;
       min-width: 84px;
       height: 20vw;
@@ -64,15 +75,14 @@
       background-size: contain;
       position: absolute;
       top: 280px;
-      left: -100px;
+      left: 0;
       @include desktop() {
         width: 200px;
         height: 132px;
         top: 400px;
-        left: -100px;
+        left: 0;
       }
     }
-
 
     .home-Title_Logo {
       display: inline-block;
@@ -86,7 +96,9 @@
       background-position: center;
       z-index: 100;
       @include desktop() {
-        width: 335px;
+        margin-top: 60px;
+        width: 400px;
+        height: 330px;
       }
     }
 
@@ -105,6 +117,7 @@
     .home-Title_CloudLeft {
       min-width: 100px;
       width: 25vw;
+      max-height: 550px;
       background-image: url("/images/cloud_left.png");
       background-repeat: no-repeat;
       background-size: contain;
@@ -122,6 +135,7 @@
     .home-Title_CloudRight {
       min-width: 100px;
       width: 25vw;
+      max-height: 550px;
       background-image: url("/images/cloud_right.png");
       background-repeat: no-repeat;
       background-size: contain;
@@ -200,9 +214,6 @@
         top: 38px;
         left: 50%;
         transform: translateX(-50%);
-        @include desktop() {
-          top: 42px;
-        }
        }
     }
   }
