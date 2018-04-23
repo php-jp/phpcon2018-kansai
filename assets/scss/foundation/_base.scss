@@ -1,3 +1,4 @@
+@import "~normalize.css";
 @import "../library/variable";
 @import "../library/mixin";
 
@@ -32,13 +33,25 @@
   src: local("Yu Gothic Bold");
   font-weight: bold;
 }
+html {
+  background-color: #004DA4;
+}
 
 body{
+  margin: 0;
   font-size: 1.4rem;
   color: #fff;
   background-color: $clr_main;
+  text-align: center;
 }
+
 
 ::selection {
   background: rgba(4, 195, 174, 0.1);
+}
+
+
+p {
+  -webkit-margin-before: 0;
+  -webkit-margin-after: 0;
 }
