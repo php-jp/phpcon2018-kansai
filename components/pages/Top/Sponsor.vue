@@ -87,14 +87,11 @@
       display: inline-block;
       max-width: 330px;
       width: 100%;
-      height: 330*0.5px;
-      background: $clr_baseWhite;
       margin: 0 5px 30px 5px;
       cursor: pointer;
 
       @include desktop() {
         max-width: 440px;
-        height: 440*0.5px;
         margin: 0 15px 40px 15px;
       }
     }
@@ -103,15 +100,12 @@
       display: inline-block;
       max-width: 150px;
       width: 100%;
-      height: 150*0.65px;
-      background: $clr_baseWhite;
       margin: 0 5px 5px 5px;
       cursor: pointer;
 
       @include desktop() {
         max-width: 215px;
-        height: 215*0.65px;
-        margin: 0 10px 10px 10px;
+        margin: 0 10px 15px 10px;
       }
     }
 
@@ -119,15 +113,12 @@
       display: inline-block;
       max-width: 100px;
       width: 100%;
-      height: 100*0.65px;
       cursor: pointer;
-      background: $clr_baseWhite;
       margin: 0 5px 5px 5px;
 
       @include desktop() {
         max-width: 150px;
-        height: 150*0.65px;
-        margin: 0 10px 10px 10px;
+        margin: 0 10px 15px 10px;
       }
     }
 
