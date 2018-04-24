@@ -1,0 +1,18 @@
+speakers:
+  hishida_hiromi:
+    name: 菱田裕美
+    name_kana: ヒシダヒロミ
+    team: 株式会社カルテットコミュニケーションズ
+    profile: |
+      1981年札幌生まれ/2児の母（ダメ母）/ 2006年〜個人事業にて各種受託開発 2014年〜カルテットコミュニケーションズ開発部所属
+    link:
+      - type: twitter
+        link: https://twitter.com/77web
+      - type: github
+        link: https://github.com/77web
+    title: 素早く実装するための戦略
+    subtitle:
+    description: |
+      受託時代〜会社員時代を通して、いつも「(速さ|早さ)は力」を掲げて開発しています。そのために実践していることを発表したいと思います。
+    image: hishida_hiromi.png
+

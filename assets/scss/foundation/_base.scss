@@ -1,0 +1,57 @@
+@import "~normalize.css";
+@import "../library/variable";
+@import "../library/mixin";
+
+:root{
+  font-size: 10px;
+  font-family: "Yu Gothic Medium","YuGothic Medium", YuGothic, "Yu Gothic","ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+  line-height: 1.7;
+}
+
+@font-face {
+  font-family: "Yu Gothic";
+  src: local("Yu Gothic Medium");
+  font-weight: 100;
+}
+@font-face {
+  font-family: "Yu Gothic";
+  src: local("Yu Gothic Medium");
+  font-weight: 200;
+}
+@font-face {
+  font-family: "Yu Gothic";
+  src: local("Yu Gothic Medium");
+  font-weight: 300;
+}
+@font-face {
+  font-family: "Yu Gothic";
+  src: local("Yu Gothic Medium");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Yu Gothic";
+  src: local("Yu Gothic Bold");
+  font-weight: bold;
+}
+html {
+  background-color: #004DA4;
+}
+
+body{
+  margin: 0;
+  font-size: 1.4rem;
+  color: #fff;
+  background-color: $clr_main;
+  text-align: center;
+}
+
+
+::selection {
+  background: rgba(4, 195, 174, 0.1);
+}
+
+
+p {
+  -webkit-margin-before: 0;
+  -webkit-margin-after: 0;
+}
