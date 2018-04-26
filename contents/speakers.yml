@@ -67,10 +67,10 @@ speakers:
         link: https://github.com/zonuexe
       - type: pixiv
         link: https://pixiv.me/tadsan
-      title: 「ふつうのPHP」がpixivになるまで
-      subtitle:
-      description: 2007年に開設されたイラストSNS「pixiv」は当初からフレームワークなしのPHPで構築され、現在まで引き継がれてきました。フレームワークの専門家によって設計されたわけではない「ふつうのPHP」がどのように発展し、継続的な開発のためにメンテナンス性やテストなどの問題と向き合ってきたかについて、技術的な概要を紹介いたします。
-      image: usami_kenta.png
+    title: 「ふつうのPHP」がpixivになるまで
+    subtitle:
+    description: 2007年に開設されたイラストSNS「pixiv」は当初からフレームワークなしのPHPで構築され、現在まで引き継がれてきました。フレームワークの専門家によって設計されたわけではない「ふつうのPHP」がどのように発展し、継続的な開発のためにメンテナンス性やテストなどの問題と向き合ってきたかについて、技術的な概要を紹介いたします。
+    image: usami_kenta.png
 
   xinsuzuki:
     name: xinsuzuki
@@ -83,7 +83,7 @@ speakers:
     link:
       - type: twitter
         link: https://twitter.com/xinsuzuki
-    title: Re: PHPから始めるコミュニティ生活
+    title: "Re: PHPから始めるコミュニティ生活"
     subtitle: 「技術系コミュニティってなんなん？」「関西盛り上げていきたい！」という人向けの話
     description: |
       コミュニティ活動は時代のトレンドを映し出す鏡のようなものです。
