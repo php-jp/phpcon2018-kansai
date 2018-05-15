@@ -3,7 +3,6 @@
     <div class="home-Sponsor_Wave"></div>
     <div class="st-Container">
       <h2 class="home-Sponsor_Title">SPONSOR</h2>
-      <p class="home-Sponsor_Description">初心者から上級者まで楽しめるセッションが目白押し！これから始めようと思っていたフレームワークや、気になっていた技術についての情報が得られるかも！？</p>
       <div class="home-Sponsor_Sponsor">
         <div class="home-Sponsor_Platinum">
           <h3>プラチナスポンサー</h3>
