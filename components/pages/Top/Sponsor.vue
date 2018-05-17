@@ -25,7 +25,7 @@
         <div class="home-Sponsor_Media">
           <h3>メディアスポンサー</h3>
           <a class="home-Sponsor_Small" v-for="(sponsor,index) in media" :key="index" :href="sponsor.link" target="_blank">
-            <img class="home-Sponsor_Image" :src="'/images/sponsors/media/'+sponsor.image" :title="sponsor.image">
+            <img class="home-Sponsor_Image" v-lazy="'/images/sponsors/media/'+sponsor.image" :title="sponsor.image">
           </a>
         </div>
       </div>

@@ -3,7 +3,9 @@
     <div class="home-Access_Wave"></div>
     <div class="st-Container">
       <h2 class="home-Access_Title">ACCESS</h2>
-      <div class="home-Access_mapImage"/>
+      <div class="home-Access_mapImage">
+        <img v-lazy="'https://maps.googleapis.com/maps/api/staticmap?center=osaka+umeda&zoom=14&size=600x300&maptype=roadmap&markers=34.705988,135.494489&key=AIzaSyDhk2ticWQZozS023qJqIO59333dfo-YPI'" alt="">
+      </div>
       <div class="home-Access_Description">
         <p class="home-Access_Place">グランフロント大阪&nbsp;北館&nbsp;タワーC&nbsp;8階</p>
         <p class="home-Access_Address">〒530-0011&nbsp;大阪市北区大深町3-1<br>&nbsp;グランフロント大阪&nbsp;北館&nbsp;タワーC8階</p>
@@ -75,13 +77,13 @@
     }
 
     &_mapImage {
-      height: 400px;
       width: 80%;
-      background: url('https://maps.googleapis.com/maps/api/staticmap?center=osaka+umeda&zoom=14&size=600x300&maptype=roadmap&markers=34.705988,135.494489&key=AIzaSyDhk2ticWQZozS023qJqIO59333dfo-YPI');
-      background-size: cover;
       margin-left: auto;
       margin-right: auto;
       margin-bottom: 2em;
+      img{
+        width: 100%;
+      }
     }
 
     &_Map {
