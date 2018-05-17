@@ -47,6 +47,6 @@ module.exports = {
     '@nuxtjs/pwa',
   ],
   plugins: [
-    '~/plugins/gmap_plugin.js'
+    // '~/plugins/gmap_plugin.js'
   ],
 }
