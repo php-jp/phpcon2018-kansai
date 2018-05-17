@@ -77,12 +77,15 @@
     }
 
     &_mapImage {
-      width: 80%;
+      width: 100%;
       margin-left: auto;
       margin-right: auto;
       margin-bottom: 2em;
       img{
         width: 100%;
+      }
+      @include desktop() {
+        width: 80%;
       }
     }
 
