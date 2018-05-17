@@ -44,6 +44,7 @@ module.exports = {
   },
   modules: [
     '@nuxtjs/font-awesome',
+    '@nuxtjs/pwa',
   ],
   plugins: [
     '~/plugins/gmap_plugin.js'
