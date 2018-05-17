@@ -27,11 +27,6 @@ module.exports = {
     ** Run ESLint on save
     */
     extend (config, { isDev, isClient }) {
-      config.module.rules.splice(0, 0, {
-        test: /\.js$/,
-        include: [path.resolve(__dirname, './node_modules/vue2-google-maps')],
-        loader: 'babel-loader',
-      })
       if (isDev && isClient) {
         config.module.rules.push({
           enforce: 'pre',
@@ -44,8 +39,10 @@ module.exports = {
   },
   modules: [
     '@nuxtjs/font-awesome',
+    '@nuxtjs/pwa',
   ],
   plugins: [
-    '~/plugins/gmap_plugin.js'
+    // '~/plugins/gmap_plugin.js'
+    '~/plugins/lazyload.js'
   ],
 }

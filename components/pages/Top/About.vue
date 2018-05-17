@@ -18,10 +18,10 @@
       <div class="home-Wanted" id="home-Wanted">
         <h2 class="home-Wanted_Title">Wanted! <br>Speaker and Sponsor</h2>
         <p class="home-Wanted_Description">PHPerの夏がもっと熱くなるようなトークをして頂けるスピーカー様、<br>ご協賛頂けるスポンサー様を募集しています。<br>皆様のご応募・ご協賛をお待ちしております。</p>
-        <a class="home-Wanted_Speaker" href="https://goo.gl/forms/HiucMV4wSXL2nZuE3" target="_blank">
-          <i class="fa fa-microphone" aria-hidden="true"></i>
-          <span>&nbsp;スピーカー申込み</span>
-        </a>
+        <!--<a class="home-Wanted_Speaker" href="https://goo.gl/forms/HiucMV4wSXL2nZuE3" target="_blank">-->
+          <!--<i class="fa fa-microphone" aria-hidden="true"></i>-->
+          <!--<span>&nbsp;スピーカー申込み</span>-->
+        <!--</a>-->
         <a class="home-Wanted_Sponsor" href="https://goo.gl/forms/6hQhy1UyF2dbLI132" target="_blank">
           <i class="fa fa-star fa-lg" aria-hidden="true"></i>
           <span>&nbsp;スポンサー申込み</span>
