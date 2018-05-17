@@ -7,19 +7,19 @@
         <div class="home-Sponsor_Platinum">
           <h3>プラチナスポンサー</h3>
           <a class="home-Sponsor_Large" v-for="(sponsor,index) in platinum" :key="index" :href="sponsor.link" target="_blank">
-            <img class="home-Sponsor_Image" :src="'/images/sponsors/platinum/'+sponsor.image" :title="sponsor.image">
+            <img class="home-Sponsor_Image" v-lazy="'/images/sponsors/platinum/'+sponsor.image" :title="sponsor.image">
           </a>
         </div>
         <div class="home-Sponsor_Gold">
           <h3>ゴールドスポンサー</h3>
           <a class="home-Sponsor_Medium" v-for="(sponsor,index) in gold" :key="index" :href="sponsor.link" target="_blank">
-            <img class="home-Sponsor_Image" :src="'/images/sponsors/gold/'+sponsor.image" :title="sponsor.image">
+            <img class="home-Sponsor_Image" v-lazy="'/images/sponsors/gold/'+sponsor.image" :title="sponsor.image">
           </a>
         </div>
         <div class="home-Sponsor_Silver">
           <h3>シルバースポンサー</h3>
           <a class="home-Sponsor_Small" v-for="(sponsor,index) in silver" :key="index" :href="sponsor.link" target="_blank">
-            <img class="home-Sponsor_Image" :src="'/images/sponsors/silver/'+sponsor.image" :title="sponsor.image">
+            <img class="home-Sponsor_Image" v-lazy="'/images/sponsors/silver/'+sponsor.image" :title="sponsor.image">
           </a>
         </div>
         <div class="home-Sponsor_Media">
