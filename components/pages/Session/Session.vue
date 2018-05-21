@@ -52,7 +52,6 @@
           </div>
         </div>
       </div>
-      <div class="home-Session_Wave"></div>
     </div>
   </div>
 </template>
@@ -87,6 +86,7 @@ export default {
   @import "~assets/scss/library/_mixin.scss";
   .home-Session{
     padding:20px 0 70px 0;
+    z-index: 1;
     &_text {
       margin-bottom: 50px;
     }
