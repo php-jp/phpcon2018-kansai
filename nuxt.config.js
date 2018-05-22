@@ -1,4 +1,4 @@
-const path = require('path')
+const path = require('path');
 
 module.exports = {
   /*
@@ -7,18 +7,23 @@ module.exports = {
   head: {
     title: 'PHPカンファレンス関西2018',
     meta: [
-      { charset: 'utf-8' },
-      { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: 'Nuxt.js project' }
+      {charset: 'utf-8'},
+      {name: 'viewport', content: 'width=device-width, initial-scale=1'},
+      {hid: 'description', name: 'description', content: 'Nuxt.js project'},
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
-    ]
+      {rel: 'icon', type: 'image/x-icon', href: '/favicon.ico'},
+      {
+        rel: 'apple-touch-icon',
+        sizes: '152x152',
+        href: 'apple-touch-icon-152x152.png',
+      },
+    ],
   },
   /*
   ** Customize the progress bar color
   */
-  loading: { color: '#3B8070' },
+  loading: {color: '#3B8070'},
   /*
   ** Build configuration
   */
@@ -26,23 +31,20 @@ module.exports = {
     /*
     ** Run ESLint on save
     */
-    extend (config, { isDev, isClient }) {
+    extend(config, {isDev, isClient}) {
       if (isDev && isClient) {
         config.module.rules.push({
           enforce: 'pre',
           test: /\.(js|vue)$/,
           loader: 'eslint-loader',
-          exclude: /(node_modules)/
-        })
+          exclude: /(node_modules)/,
+        });
       }
-    }
+    },
   },
-  modules: [
-    '@nuxtjs/font-awesome',
-    '@nuxtjs/pwa',
-  ],
+  modules: ['@nuxtjs/font-awesome', '@nuxtjs/pwa'],
   plugins: [
     // '~/plugins/gmap_plugin.js'
-    '~/plugins/lazyload.js'
+    '~/plugins/lazyload.js',
   ],
-}
+};
