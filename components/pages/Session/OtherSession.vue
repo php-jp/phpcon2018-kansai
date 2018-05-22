@@ -76,7 +76,8 @@
       position: relative;
       width: 45%;
       height: 140px;
-      margin-bottom: 50px;
+      margin: 0 20px 50px 20px;
+      max-width: 185px;
       @include desktop (){
         padding: 0 10px;
         width: 185px;
@@ -84,15 +85,13 @@
       }
       .home-Other_Img {
         top: -25px;
-        left: 46px;
         position: absolute;
+        left: 50%;
         background-color: #ffffff;
         border-radius: 50%;
         height: 60px;
         width: 60px;
-        @include desktop(){
-        left: 70px;
-      }
+        transform: translateX(-50%);
       }
       .home-Other_description {
         position: relative;
@@ -102,7 +101,7 @@
       .home-Other_triangle {
         position: absolute;
         top: 88px;
-        left: 100px;
+        right:1%;
         width: 0;
         height: 0;
         border-top: 25px solid transparent;
