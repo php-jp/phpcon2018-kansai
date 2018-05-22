@@ -15,4 +15,208 @@ speakers:
     description: |
       受託時代〜会社員時代を通して、いつも「(速さ|早さ)は力」を掲げて開発しています。そのために実践していることを発表したいと思います。
     image: hishida_hiromi.png
+  takahasi_yugo:
+    name: 高橋侑吾
+    name_kana: タカハシユウゴ
+    team: KLab株式会社
+    profile: |
+      Webアプリケーションエンジニア。
+      KLab株式会社所属。普段はPHPやGoでソーシャルゲームアプリを開発しています。
+    link:
+      - type: twitter
+        link: https://twitter.com/yugo_tak
+    title : PHPer向けWebアプリケーションのパフォーマンスチューニング入門
+    subtitle:
+    description: |
+      本セッションでは高負荷のソーシャルゲームアプリのバックエンド開発で得た知見をもとに、PHPによるWebアプリケーションに対するパフォーマンスチューニングの重要性、考え方、監視、負荷試験などについて基礎的な内容をお話します。
+      個々の具体的なチューニング技法の紹介というよりも、そのチューニングに至るまでの考え方や負荷に対するアプローチの仕方にフォーカスしたいと思います。
+    image: takahasi_yugo.png
+  sugita_sota:
+    name: 杉浦颯太
+    name_kana: スギウラソウタ
+    team: 株株式会社メルカリ
+    profile: |
+      株式会社メルカリに所属するバックエンドエンジニア。日本メルカリチームに所属しPHPを書いている。趣味はJavaScriptで将来の夢はJavaScriptになること。
+    link:
+      - type: twitter
+        link: https://twitter.com/sota1235
+      - type: blog
+        link: https://sota1235.hatenablog.com/
+      - type: facebook
+        link: https://www.facebook.com/sota.sugiura
+    title: インターフェース再入門
+    subtitle:
+    description: |
+      みなさんは普段、どのくらいPHPのInterfaceを活用してるでしょうか。
+      Interfaceはうまく活用することでコードの表現の幅を広げることができます。
+      このトークではInterfaceの定義を再定義し、どのような場面で活用できるのかを再考します。
+      またいかなる場面でInterfaceを採用すべきなのかをケーススタディを交えてお話をします。
+    image: sugita_sota.png
+  goto_hidenori:
+    name: 後藤 秀宣
+    name_kana: ゴトウヒデノリ
+    team: 株式会社カルテットコミュニケーションズ
+    profile: |
+      岐阜の山に住み普段はリモートワーク、週に2回名古屋に出社というスタイルで仕事をしています。ソフトウェアやシステムの設計、それら技術の学び方などについて考えたり語り合ったりすることが大好きです！
+    link:
+      - type: twitter
+        link: https://twitter.com/hidenorigoto
+      - type: blog
+        link: http://blog.hidenorigoto.com/
+    title: 続・SOLIDの原則ってどんなふうに使うの？
+    subtitle: オープン・クローズドの原則 〜先輩のコーディングノート編〜
+    description: |
+      オブジェクト指向プログラミングを勉強したことのある人なら、一度は聞いたことのあるSOLIDの原則、そしてその1つであるオープン・クローズドの原則。
+      PHPerKaigi 2018でベストトーク賞の講演を再構成して、オープン・クローズドの原則の範囲の外にある設計との関係性や、コード設計の機微に触れます。
+    image: goto_hidenori.png
+  usami_kenta:
+    name: うさみけんた
+    name_kana: ウサミケンタ
+    team: ピクシブ株式会社
+    profile: |
+      ピクシブ株式会社 技術基盤チーム所属。プログラミング言語の比較が好きです。Rubyが好きで東京に来て、気がついたらPHPを書いてた。Emacs PHP Modeメンテナー。
+    link:
+      - type: twitter
+        link: https://twitter.com/tadsan
+      - type: github
+        link: https://github.com/zonuexe
+      - type: pixiv
+        link: https://pixiv.me/tadsan
+    title: 「ふつうのPHP」がpixivになるまで
+    subtitle:
+    description: |
+      2007年に開設されたイラストSNS「pixiv」は当初からフレームワークなしのPHPで構築され、現在まで引き継がれてきました。フレームワークの専門家によって設計されたわけではない「ふつうのPHP」がどのように発展し、継続的な開発のためにメンテナンス性やテストなどの問題と向き合ってきたかについて、技術的な概要を紹介いたします。
+    image: usami_kenta.png
+  matuhuzi_hideharu:
+    name: 松藤秀治
+    name_kana: マツフジヒデハル
+    team: 株式会社ND&I
+    profile: |
+      大阪在住のエンジニアです。PHP/Symfonyがメインです。
+    link:
+      - type: twitter
+        link: https://twitter.com/matsu_hide
+    title: 初心者「に」教えてほしいこと
+    subtitle:
+    description: |
+      今やエンジニアは引く手あまたです。このカンファレンスでもたくさんの募集が出ていると思います。エンジニアを増やすために初心者を育成することは今や業界全体の重要な課題となっています。そこで初心者に何をどう教えるのかについてお話したいと思います。もちろん初心者の方も歓迎です。
+    image: matuhuzi_hideharu.png
+  suzuki_siniti:
+    name: xinsuzuki
+    name_kana: スズキシンイチ
+    team:
+    profile: |
+      2012年独立。司会もできるエンジニア。都市政策（修士）。
+      2017年は190本のイベント（読書会、もくもく会、ハッカソン、ビアバッシュなど）を開催し、関西から精力的に発信を行う。
+      創設コミュニティの１つ「大阪駆動開発」は、2018年3月に日本マイクロソフト株式会社より「コミュニティに対する貢献賞」を受賞。
+    link:
+      - type: twitter
+        link: https://twitter.com/xinsuzuki
+    title: Re: PHPから始めるコミュニティ生活
+    subtitle: 「技術系コミュニティってなんなん？」「関西盛り上げていきたい！」という人向けの話
+    description: |
+      コミュニティ活動は時代のトレンドを映し出す鏡のようなものです。
+      コミュニティは社内や独学では得られなかった新しい技術や勘所などを学ぶ/知る場となるだけでなく、
+      同じ技術や関心でゆるーくつながる社交の場、あるいは時に人生を変える場にもなり得ます。
+      単に「参加する」だけでなく「手伝ってみる」「主催してみる」のも良いかもしれません。
+      さぁ、あなたも今日からコミュニティを通じて、関西を盛り上げてみませんか？
+    image: suzuki_siniti.png
+  kisida_kenitiro:
+    name: 岸田健一郎
+    name_kana: キシダケンイチロウ
+    team: 株式会社永和システムマネジメント
+    profile: |
+      株式会社永和システムマネジメントで働く自称Creator。イラストからプログラミング、サーバーから電子工作までなんでも作る便利屋さんてき存在。好きな球団は阪神タイガース
+    link:
+      - type: twitter
+        link: https://twitter.com/sizuhiko
+      - type: github
+        link: https://github.com/sizuhiko
+    title: GAE に PHPアプリを継続的デプロイする
+    subtitle:
+    description: |
+      Google AppEngine Standard Editionは、PHPのバージョンが少し古いなど難点もありますが、PaaS基盤として選択肢の1つであると思います。
+      かつてGoogleDeveloperブログにGAEへのPUSH TO DEPROYのやり方が掲載されましたが、後に削除され今では幻です。では今どうやったら良いのか？
+      GAEへデプロイする最新情報をお届けします。
+    image: kisida_kenitiro.png
+  nakasima_rin:
+    name: 中島凜
+    name_kana: ナカシマ リン
+    team: 株式会社ORATTA
+    profile: |
+      ソシャゲのサーバサイドエンジニア女史。WEB系出身。PHPer/JSer。Vueはいいぞ
+    link:
+      - type: twitter
+        link: https://twitter.com/FruitRiin
+    title: あえてPHPerに勧めるVue.js入門
+    subtitle:
+    description: |
+      PHPは最終的に静的なHTMLしか吐き出さない、でも今のWebって言えばJSを使って動的にやるってのが基本。そうするとJSONを返すAPIを作ってばかり…。ユーザーの目に直接見えるイマドキのUIを作りたい！
+      そういえばLaravelってVueを公式にサポートしてるんだっけ？じゃあやってみよう！
+      テンプレートの記法がHTML拡張っぽくて学習コスト及び心理的ハードルが低いVue.jsの開発環境をLaravelの新規プロジェクト内にサクっと作る方法から、Vue.jsのいいところ悪いところハマりどころ、Vue.js開発のすごいところなど。
+    image: nakasima_rin.png
+  sakakibara_masahiko:
+    name: 榊原昌彦
+    name_kana: サカキバラマサヒコ
+    team: 一般社団法人リレーションデザイン研究所
+    profile: |
+      大学院卒業後、一般社団法人リレーションデザイン研究所立ち上げ。その後、まちづくりの産業化を目指す一般社団法人エリア・イノベーション・アライアンスにも参画し、全国の様々なまちづくりの現場に携わる。事業で用いるアプリやシステムの開発を行っている他、様々なコミュニティ活動に関わる。著書「Ionicで作るモバイルアプリ制作入門」。
+    link:
+      - type: twitter
+        link: https://twitter.com/rdlabo
+    title: 脱「なんちゃって」フロントエンド
+    subtitle: バックエンド言語でフロントエンドを書くのはもうやめよう
+    description: |
+      本番環境のサービスで、「データベース接続確立のエラー」「Fatal Error」「500 Internal Server
+      Error」などの多くのエラーを見かけます。これはバックエンド技術でフロントエンドを書いたことから起きる悲劇。フロントエンドをちゃんとフロントエンドすれば、こういったエラーを表示しないだけではなく、オフライン表示やモバイルの「ホーム画面に追加」などの多くの恩恵を受けることができます。本セッションでは、PHPの役割を明らかにし、2018年の「ちゃんとWebをするためには」を見直します。
+    image: sakakibara_masahiko.png
+  takahasi_kunihiko:
+    name: 高橋邦彦
+    name_kana: タカハシクニヒコ
+    team: 合同会社ねこもり
+    profile: |
+      最近はPHPのバージョンアップやフレームワークのバージョンアップのお手伝いをしています
+    link:
+      - type: twitter
+        link: https://twitter.com/kunit
+    title: CircleCI 2.0 を使い倒そう
+    subtitle:
+    description: |
+      みなさん、CIを利用していますか？ 単純にコーディングスタイルのチェック、文法チェック、テストを行うだけではなく、様々な用途でCIを利用してみませんか？
+    image: takahasi_kunihiko.png
+  saita_sinya:
+    name: 斉田真也
+    name_kana: サイタシンヤ
+    team: 株式会社ロックオン
+    profile: |
+      金融系開発を経て、ここ5~6年はWeb開発に従事。
+      PHPは好きだし、PHP以外の言語も好き。プライベートではしょうもないツールやゲームの開発をしています。好きなツールは「Google Analytics」嫌いな言葉は「Permission Denied」将来はシェル芸人になりたい。
+    link:
+      - type: facebook
+        link: https://www.facebook.com/saita.shinya
+    title: 上司から「なんでPHPなの？」と言われたら
+    subtitle: PHP弾劾を受けた時に切り返す、伝家の宝刀。いや、諸刃の剣
+    description: |
+      このセリフ良く言われるのではないでしょうか。
+      「え、なんで今JavaをPHPにリプレイス？」「え、Goの方が早くない？」「最近はPythonでしょ」とか言われたら言い返してやりましょう。
+      「いや、PHPじゃないと駄目なんです！！」 と。
+      ぶっちゃけPHPでないと行けない理由なんてものはありません。でも、PHPerがPHPを選択するのには理由があるのです。
+      そんな、をみなさんにお渡しします（ネタ有り）
+    image: saita_sinya.png
+  wakaba_akira:
+    name: 若葉 章
+    name_kana: ワカバ アキラ
+    team: Project ICKX
+    profile: |
+      同人ソフトサークル Project ICKX(プロジェクト イクス)のプロデューサを務めています。
+      PHP歴は15年ほどでPHP3からの付き合いです。
+      主にフライトシューティングゲームを制作するサークルですが、サーバサイドコンテンツや公式サイトの運用にPHPを用いています。
+    link:
+      - type: homepage
+        link: https://ickx.jp/
+    title: 遅延評価戦略を用いたアクション呼び出しと安全なコピペで生産性アップ！
+    subtitle:
+    description: |
+      弊サークルが開発している高速開発フレームワーク『Flywheel2 (フライホイールツー)』の特徴である、自然に記述できる処理呼び出し時の値の遅延評価システムと、それを用いる事によって得られる、設計の疎結合化および生産性の向上について発表します。
+    image: wakaba_akira.png
 
