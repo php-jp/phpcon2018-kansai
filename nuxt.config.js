@@ -18,6 +18,14 @@ module.exports = {
         sizes: '152x152',
         href: 'apple-touch-icon-152x152.png',
       },
+      //issue #32　実装の記述です。
+      // {
+      //   rel: 'apple-touch-startup-image',
+      //   sizes: '512x512',
+      //   href: 'launch-512x512.png',
+      //   media:
+      //     '(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)',
+      // },
     ],
   },
   /*
