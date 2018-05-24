@@ -6,7 +6,7 @@
       <div class="home-Session_overScroll">
         <div class="home-Session_TimeSelect">
           <div class="home-Session_Time" v-for="time in times" :key="time.time" >
-            {{time.time}}
+            <p class="home-Session_TimeStyle">{{time.time}}</p>
           </div>
         </div>
       </div>
@@ -52,31 +52,30 @@
           </div>
         </div>
       </div>
-      <div class="home-Session_Wave"></div>
     </div>
   </div>
 </template>
 
 <script>
-export default {
-  data () {
-    return {
-      clickNumber:0,
-      isSelect:false,
-      times:[
-        {time:'10:00'},
-        {time:'10:00'},
-        {time:'10:00'},
-        {time:'10:00'},
-        {time:'10:00'},
-      ],
-      items:[
-        {room:'Room C01+C02', msg:'25文字でできるPHPできるあんなことやこんなこと'},
-        {room:'Room C01+C02', msg:'25文字でできるPHPできるあんなことやこんなこと'}
-      ]
+    export default {
+        data () {
+            return {
+                clickNumber:0,
+                isSelect:false,
+                times:[
+                    {time:'10:00'},
+                    {time:'10:00'},
+                    {time:'10:00'},
+                    {time:'10:00'},
+                    {time:'10:00'},
+                ],
+                items:[
+                    {room:'Room C01+C02', msg:'25文字でできるPHPできるあんなことやこんなこと'},
+                    {room:'Room C01+C02', msg:'25文字でできるPHPできるあんなことやこんなこと'}
+                ]
+            }
+        }
     }
-  }
-}
 
 
 
@@ -87,6 +86,7 @@ export default {
   @import "~assets/scss/library/_mixin.scss";
   .home-Session{
     padding:20px 0 70px 0;
+    z-index: 1;
     &_text {
       margin-bottom: 50px;
     }
@@ -104,6 +104,9 @@ export default {
           background-color: #fff;
           color: #44648c;
           margin: 0 10px 0 0;
+          &Style {
+            margin-top: 13px;
+          }
         }
       }
     }
