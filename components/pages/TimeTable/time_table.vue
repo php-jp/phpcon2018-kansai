@@ -3,14 +3,9 @@
         <div class="st-Container">
             <h2 class="home-Time_title">TIME TABLE</h2>
             <p class="home-Time_description">初心者から上級者までが楽しめるセッションが目白押し!これから始めようと思っていたフレームワークや（仮）クリックするとセッションの詳細が確認できます。</p>
-            <div class="home-Time_table">
-                <div class="home-Time_item1"></div>
-                <div class="home-Time_item2"></div>
-                <div class="home-Time_item3"></div>
-                <div class="home-Time_item4"></div>
-                <div class="home-Time_item5"></div>
-                <div class="home-Time_item6"></div>
-                <div class="home-Time_item7"></div>
+            <div>
+              <time-table-row></time-table-row>
+              <time-table-row long="true"></time-table-row>
             </div>
             <div class="home-Time_OtherLink"></div>
         </div>
@@ -18,12 +13,16 @@
 </template>
 
 <script>
+  import TimeTableRow from "./time_table_row"
     export default {
         data() {
             return {
 
             }
-        }
+        },
+      components:{
+        TimeTableRow
+      }
     }
 
 </script>
