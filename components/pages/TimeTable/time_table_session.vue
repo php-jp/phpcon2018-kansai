@@ -1,11 +1,11 @@
 <template>
-    <div class="ttsession">
-      <div class="ttsession--track">C01+C02</div>
-      <div class="ttsession--title">サンプルタイトル</div>
+    <div class="ttsession" v-if="session">
+      <div class="ttsession--track">{{floor}}</div>
+      <div class="ttsession--title">{{session.title}}</div>
       <div class="ttsession--image">
         <img src="http://placehold.it/500x500" alt="">
       </div>
-      <div class="ttsession--name">ほげほげ</div>
+      <div class="ttsession--name">{{session.name}}</div>
       <div class="ttsession--linksheet"></div>
       <div class="ttsession--link">＋</div>
     </div>
@@ -14,6 +14,7 @@
 <script>
   import TimeTableRow from "./time_table_row"
     export default {
+    props:["session","floor"],
         data() {
             return {
 

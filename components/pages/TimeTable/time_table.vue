@@ -4,8 +4,7 @@
             <h2 class="home-Time_title">TIME TABLE</h2>
             <p class="home-Time_description">初心者から上級者までが楽しめるセッションが目白押し!これから始めようと思っていたフレームワークや（仮）クリックするとセッションの詳細が確認できます。</p>
             <div>
-              <time-table-row></time-table-row>
-              <time-table-row long="true"></time-table-row>
+              <time-table-row v-for="(_sessions,index) in sessions" :key="index" v-bind="_sessions"/>
             </div>
             <div class="home-Time_OtherLink"></div>
         </div>
@@ -17,7 +16,49 @@
     export default {
         data() {
             return {
+              sessions: [
+                {
+                  tracka: [
+                    this.$store.state.speakers.matuhuzi_hideharu,
+                    this.$store.state.speakers.sugita_sota,
 
+                  ],
+                  trackb: [
+                    this.$store.state.speakers.nakasima_rin,
+                    this.$store.state.speakers.hishida_hiromi,
+                  ],
+                  trackc: this.$store.state.speakers.sakakibara_masahiko,
+                },
+                {
+                  tracka: [
+                    this.$store.state.speakers.takahasi_yugo,
+                    this.$store.state.speakers.tba,
+
+                  ],
+                  trackb: [
+                    this.$store.state.speakers.tba,
+                    this.$store.state.speakers.wakaba_akira,
+                  ],
+                  trackc: this.$store.state.speakers.goto_hidenori,
+                },
+                {
+                  tracka: this.$store.state.speakers.tba,
+                  trackb: this.$store.state.speakers.saita_sinya,
+                  trackc: this.$store.state.speakers.tba,
+                },
+                {
+                  tracka: [
+                    this.$store.state.speakers.tba,
+                    this.$store.state.speakers.kisida_kenitiro,
+
+                  ],
+                  trackb: [
+                    this.$store.state.speakers.suzuki_siniti,
+                    this.$store.state.speakers.usami_kenta,
+                  ],
+                  trackc: this.$store.state.speakers.takahasi_kunihiko,
+                }
+              ]
             }
         },
       components:{
