@@ -3,10 +3,12 @@
         <div class="st-Container">
             <h2 class="home-Time_title">TIME TABLE</h2>
             <p class="home-Time_description">初心者から上級者までが楽しめるセッションが目白押し!これから始めようと思っていたフレームワークや（仮）クリックするとセッションの詳細が確認できます。</p>
-            <div>
+            <div class="home-Time_session">
               <time-table-row v-for="(_sessions,index) in sessions" :key="index" v-bind="_sessions"/>
             </div>
-            <div class="home-Time_OtherLink"></div>
+            <div class="home-Time_Link">
+                <a href="/"><i class="fas fa-home" aria-hidden="true"></i>TOPへ戻る</a>
+            </div>
         </div>
     </div>
 </template>
@@ -121,6 +123,21 @@
             grid-row:2/3;
             grid-column: 4/5;
             background-color:#f8f4fc;
+        }
+    }
+    &_session {
+        margin-bottom: 3em;
+    }
+    &_Link {
+        @include button();
+        margin-bottom: 3em;
+        a {
+            color: $clr_baseDark;
+            text-decoration: none;
+            padding: 15px 45px;
+        }
+        i {
+            padding-right: 1em;
         }
     }
 }

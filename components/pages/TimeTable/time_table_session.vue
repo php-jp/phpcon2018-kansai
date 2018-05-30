@@ -32,6 +32,7 @@
     @import "~assets/scss/library/_mixin.scss";
 
 
+$link-border-size: 1em;
 
 .ttsession{
   width: 100%;
@@ -42,17 +43,28 @@
   &--cdefault{
   }
   &--track{
-    background-color: black;
     color: white;
-    margin-bottom: 15px;
+    @include desktop() {
+      border-radius: 10px 10px 0 0;
+    }
   }
   &--title{
     text-align: left;
+    padding: .5em;
+    @include desktop() {
+      padding: 1em;
+    }
   }
   &--image{
     position: absolute;
     top: 8em;
     width: 100%;
+    @include desktop() {
+      width: auto;
+      top: auto;
+      bottom: 1em;
+      left: 1em;
+    }
     img{
       width: 3em;
       border-radius: 50%;
@@ -64,8 +76,14 @@
     width: 100%;
     text-align: center;
     font-size: .8em;
+    @include desktop() {
+      width: auto;
+      top: auto;
+      bottom: 2.5em;
+      left: 6em;
+    }
   }
-  $link-border-size: 1em;
+
   &--linksheet{
     position: absolute;
     bottom: 0px;
@@ -74,8 +92,6 @@
     height: 0em;
     border-top: $link-border-size solid transparent;
     border-left: $link-border-size solid transparent;
-    border-right: $link-border-size solid black;
-    border-bottom: $link-border-size solid black;
   }
   &--link{
     position: absolute;
@@ -97,12 +113,43 @@
 
 .ttsession.type-a{
   background: $clr_main_light;
+  .ttsession--track {
+    background-color: $clr_main;
+  }
+  .ttsession--linksheet {
+    border-right: $link-border-size solid $clr_main;
+    border-bottom: $link-border-size solid $clr_main;
+  }
+  @include desktop() {
+    border-radius: 10px 10px 0 0;
+  }
 }
 .ttsession.type-b{
   background: $clr_accent_light;
+  .ttsession--track {
+    background-color: $clr_accent;
+    color: $clr_baseDark;
+  }
+  .ttsession--linksheet {
+    border-right: $link-border-size solid $clr_accent;
+    border-bottom: $link-border-size solid $clr_accent;
+  }
+  @include desktop() {
+    border-radius: 10px 10px 0 0;
+  }
 }
 .ttsession.type-c{
   background: $clr_base_light;
+  .ttsession--track {
+    background-color: $clr_base;
+  }
+  .ttsession--linksheet {
+    border-right: $link-border-size solid $clr_base;
+    border-bottom: $link-border-size solid $clr_base;
+  }
+  @include desktop() {
+    border-radius: 10px 10px 0 0;
+  }
 }
 
 

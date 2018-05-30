@@ -3,7 +3,7 @@
       <div class="ttrow--cdefaults">
         <div class="ttrow--cdefault">
           <div class="ttrow--time">
-            11:00
+            <span class="ttrow--time__a">11:00</span>
           </div>
           <div class="ttrow--session__a">
             <time-table-session class="type-a" floor="C01+C02" :session="tracka1"></time-table-session>
@@ -14,13 +14,15 @@
         </div>
         <div class="ttrow--crestrow" v-if="long">
           <div class="ttrow--time">
-            11:00
+            <span class="ttrow--time__b">11:00</span>
           </div>
-          <div class="ttrow--timerest">20分休憩</div>
+          <div class="ttrow--timerest">
+            <span class="ttrow--timerest__a">20分休憩</span>
+          </div>
         </div>
         <div class="ttrow--cdefault" v-if="long">
           <div class="ttrow--time">
-            11:00
+            <span class="ttrow--time__a">11:00</span>
           </div>
           <div class="ttrow--session__a">
             <time-table-session class="type-a" floor="C01+C02" :session="tracka[1]"></time-table-session>
@@ -125,13 +127,30 @@
   }
   &--time{
     width: 100-($baseWidth * 10 /7)*2;
-    writing-mode: vertical-rl;
     background: $clr-gray;
-    text-align: left;
+    position: relative;
+    &__a {
+      position: absolute;
+      left: 50%;
+      transform: translate(-50%, 50%);
+    }
+    &__b {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
   }
   &--timerest{
     background: $clr-gray;
     width: 100%;
+    position: relative;
+    &__a {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
   }
   &--clong{
     width: $baseWidth;
