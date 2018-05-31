@@ -13,7 +13,7 @@
           </div>
         </div>
         <div class="ttrow--crestrow" v-if="long">
-          <div class="ttrow--time">
+          <div class="ttrow--time__small">
             <span class="ttrow--time__b">11:00</span>
           </div>
           <div class="ttrow--timerest">
@@ -112,11 +112,13 @@
   &--session__b,
   &--session__c{
     height: $baseHeight;
-
   }
   &--session__a,
   &--session__b{
     width: $baseWidth * 10 /7;
+    @include desktop() {
+      margin: 0 2px;
+    }
   }
   &--session__c{
     width: 100%; // abc で幅を考えない
@@ -125,26 +127,55 @@
     width: 100%; // abc で幅を考えない
     height: $longHeight;
   }
-  &--time{
+  &--time {
     width: 100-($baseWidth * 10 /7)*2;
     background: $clr-gray;
+    writing-mode: vertical-rl;
+    text-align: left;
+    z-index: 1;
     position: relative;
+    @include desktop() {
+      writing-mode: horizontal-tb;
+      margin: 0 2px;
+    }
     &__a {
       position: absolute;
-      left: 50%;
-      transform: translate(-50%, 50%);
+      right: 50%;
+      transform: translate(50%, 0);
+      padding-top: 1em;
+      @include desktop() {
+        left: 50%;
+        right: auto;
+        padding: 0;
+        transform: translate(-50%, 50%);
+      }
     }
     &__b {
       position: absolute;
       top: 50%;
       left: 50%;
-      transform: translate(-50%, -50%);
+      transform: translate(0, -50%);
+      @include desktop() {
+        transform: translate(-25%, -50%);
+      }
+    }
+  }
+  &--time__small {
+    width: 100-($baseWidth * 10 /7)*2;
+    background: $clr-gray;
+    text-align: left;
+    z-index: 1;
+    position: relative;
+    @include desktop() {
     }
   }
   &--timerest{
     background: $clr-gray;
     width: 100%;
     position: relative;
+    @include desktop() {
+      margin-right: 2px;
+    }
     &__a {
       position: absolute;
       top: 50%;
@@ -154,6 +185,9 @@
   }
   &--clong{
     width: $baseWidth;
+    @include desktop() {
+      margin: 0 2px;
+    }
   }
 }
 

@@ -45,7 +45,7 @@ $link-border-size: 1em;
   &--track{
     color: white;
     @include desktop() {
-      border-radius: 10px 10px 0 0;
+      display: none;
     }
   }
   &--title{
@@ -120,9 +120,6 @@ $link-border-size: 1em;
     border-right: $link-border-size solid $clr_main;
     border-bottom: $link-border-size solid $clr_main;
   }
-  @include desktop() {
-    border-radius: 10px 10px 0 0;
-  }
 }
 .ttsession.type-b{
   background: $clr_accent_light;
@@ -134,9 +131,6 @@ $link-border-size: 1em;
     border-right: $link-border-size solid $clr_accent;
     border-bottom: $link-border-size solid $clr_accent;
   }
-  @include desktop() {
-    border-radius: 10px 10px 0 0;
-  }
 }
 .ttsession.type-c{
   background: $clr_base_light;
@@ -146,9 +140,6 @@ $link-border-size: 1em;
   .ttsession--linksheet {
     border-right: $link-border-size solid $clr_base;
     border-bottom: $link-border-size solid $clr_base;
-  }
-  @include desktop() {
-    border-radius: 10px 10px 0 0;
   }
 }
 
