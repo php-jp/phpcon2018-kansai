@@ -219,3 +219,13 @@ speakers:
     description: |
       弊サークルが開発している高速開発フレームワーク『Flywheel2 (フライホイールツー)』の特徴である、自然に記述できる処理呼び出し時の値の遅延評価システムと、それを用いる事によって得られる、設計の疎結合化および生産性の向上について発表します。
     image: wakaba_akira.png
+  tba:
+    name: TBA
+    name_kana: TBA
+    team: TBA
+    profile: TBA
+    link: []
+    title: TBA
+    subtitle:
+    description: TBA
+    image: tba.png
