@@ -1,14 +1,15 @@
 <template>
     <div class="ttrow">
       <div class="ttrow--cdefaults">
+
         <div class="ttrow--cdefault">
-          <div class="ttrow--time">
-            <span class="ttrow--time__a">11:00</span>
+          <div class="ttrow--time" :class="{time_op:!check}">
+            <span class="ttrow--time__a" >11:00</span>
           </div>
-          <div class="ttrow--session__a">
-            <time-table-session class="type-a" floor="C01+C02" :session="tracka1"></time-table-session>
+          <div class="ttrow--session__a" :class="{session_op:!check}">
+            <time-table-session class="type-a" floor="C01+C02" :session="tracka1" ></time-table-session>
           </div>
-          <div class="ttrow--session__b">
+          <div class="ttrow--session__b" :class="{session_op:!check}">
             <time-table-session class="type-b" floor="C05" :session="trackb1"></time-table-session>
           </div>
         </div>
@@ -32,8 +33,8 @@
           </div>
         </div>
       </div>
-      <div class="ttrow--clong" v-if="!long">
-        <div class="ttrow--session__c">
+      <div class="ttrow--clong" v-if="!long" >
+        <div class="ttrow--session__c" :class="{session_op:!check}">
           <time-table-session class="type-c" floor="C07" :session="trackc"></time-table-session>
         </div>
       </div>
@@ -55,7 +56,6 @@
       },
       data() {
           return {
-
           }
       },
       computed:{
@@ -67,6 +67,9 @@
         },
         trackb1(){
           return this.long? this.trackb[0] : this.trackb
+        },
+        check(){
+            return !!this.tracka
         }
       },
       components:{
@@ -112,6 +115,9 @@
   &--session__b,
   &--session__c{
     height: $baseHeight;
+  }
+  .session_op {
+    height:60px;
   }
   &--session__a,
   &--session__b{

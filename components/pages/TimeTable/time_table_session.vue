@@ -1,13 +1,17 @@
 <template>
     <div class="ttsession" v-if="session">
       <div class="ttsession--track">{{floor}}</div>
-      <div class="ttsession--title">{{session.title}}</div>
-      <div class="ttsession--image">
+      <div class="ttsession--title" >{{session.title}}</div>
+      <div class="ttsession--image" v-if="session.name" >
         <img src="http://placehold.it/500x500" alt="">
       </div>
-      <div class="ttsession--name">{{session.name}}</div>
+      <div class="ttsession--name" >{{session.name}}</div>
       <div class="ttsession--linksheet"></div>
       <div class="ttsession--link">＋</div>
+    </div>
+    <div class="ttsession tt_else" v-else>
+        <div class="ttsession--track">{{floor}}</div>
+        <div class="ttsession--title" ></div>
     </div>
 </template>
 
@@ -110,6 +114,7 @@ $link-border-size: 1em;
     width: 20vw;
   }
 }
+
 
 .ttsession.type-a{
   background: $clr_main_light;
