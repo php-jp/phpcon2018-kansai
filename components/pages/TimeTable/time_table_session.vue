@@ -3,7 +3,7 @@
       <div class="ttsession--track">{{floor}}</div>
       <div class="ttsession--title" >{{session.title}}</div>
       <div class="ttsession--image" v-if="session.name" >
-        <img src="http://placehold.it/500x500" alt="">
+        <img v-lazy="`/images/speakers/${session.image}`" v-if="session.image">
       </div>
       <div class="ttsession--name" >{{session.name}}</div>
       <div class="ttsession--linksheet"></div>
@@ -55,8 +55,10 @@ $link-border-size: 1em;
   &--title{
     text-align: left;
     padding: .5em;
+    line-height: 1em;
     @include desktop() {
-      padding: 1em;
+      padding: 2em 1em;
+      line-height: 2em;
     }
   }
   &--image{

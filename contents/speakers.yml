@@ -14,7 +14,7 @@ speakers:
     subtitle:
     description: |
       受託時代〜会社員時代を通して、いつも「(速さ|早さ)は力」を掲げて開発しています。そのために実践していることを発表したいと思います。
-    image: hishida_hiromi.png
+    image: hishida_hiromi.jpg
   takahasi_yugo:
     name: 高橋侑吾
     name_kana: タカハシユウゴ
@@ -30,7 +30,7 @@ speakers:
     description: |
       本セッションでは高負荷のソーシャルゲームアプリのバックエンド開発で得た知見をもとに、PHPによるWebアプリケーションに対するパフォーマンスチューニングの重要性、考え方、監視、負荷試験などについて基礎的な内容をお話します。
       個々の具体的なチューニング技法の紹介というよりも、そのチューニングに至るまでの考え方や負荷に対するアプローチの仕方にフォーカスしたいと思います。
-    image: takahasi_yugo.png
+    image: takahashi_yugo.jpg
   sugita_sota:
     name: 杉浦颯太
     name_kana: スギウラソウタ
@@ -51,7 +51,7 @@ speakers:
       Interfaceはうまく活用することでコードの表現の幅を広げることができます。
       このトークではInterfaceの定義を再定義し、どのような場面で活用できるのかを再考します。
       またいかなる場面でInterfaceを採用すべきなのかをケーススタディを交えてお話をします。
-    image: sugita_sota.png
+    image: sugiura_sota.png
   goto_hidenori:
     name: 後藤 秀宣
     name_kana: ゴトウヒデノリ
@@ -100,7 +100,7 @@ speakers:
     subtitle:
     description: |
       今やエンジニアは引く手あまたです。このカンファレンスでもたくさんの募集が出ていると思います。エンジニアを増やすために初心者を育成することは今や業界全体の重要な課題となっています。そこで初心者に何をどう教えるのかについてお話したいと思います。もちろん初心者の方も歓迎です。
-    image: matuhuzi_hideharu.png
+    image: matsufuji_hideharu.png
   suzuki_siniti:
     name: xinsuzuki
     name_kana: スズキシンイチ
@@ -120,7 +120,7 @@ speakers:
       同じ技術や関心でゆるーくつながる社交の場、あるいは時に人生を変える場にもなり得ます。
       単に「参加する」だけでなく「手伝ってみる」「主催してみる」のも良いかもしれません。
       さぁ、あなたも今日からコミュニティを通じて、関西を盛り上げてみませんか？
-    image: suzuki_siniti.png
+    image: xinsuzuki.jpg
   kisida_kenitiro:
     name: 岸田健一郎
     name_kana: キシダケンイチロウ
@@ -138,7 +138,7 @@ speakers:
       Google AppEngine Standard Editionは、PHPのバージョンが少し古いなど難点もありますが、PaaS基盤として選択肢の1つであると思います。
       かつてGoogleDeveloperブログにGAEへのPUSH TO DEPROYのやり方が掲載されましたが、後に削除され今では幻です。では今どうやったら良いのか？
       GAEへデプロイする最新情報をお届けします。
-    image: kisida_kenitiro.png
+    image: kishida_kenichiro.jpg
   nakasima_rin:
     name: 中島凜
     name_kana: ナカシマ リン
@@ -154,7 +154,7 @@ speakers:
       PHPは最終的に静的なHTMLしか吐き出さない、でも今のWebって言えばJSを使って動的にやるってのが基本。そうするとJSONを返すAPIを作ってばかり…。ユーザーの目に直接見えるイマドキのUIを作りたい！
       そういえばLaravelってVueを公式にサポートしてるんだっけ？じゃあやってみよう！
       テンプレートの記法がHTML拡張っぽくて学習コスト及び心理的ハードルが低いVue.jsの開発環境をLaravelの新規プロジェクト内にサクっと作る方法から、Vue.jsのいいところ悪いところハマりどころ、Vue.js開発のすごいところなど。
-    image: nakasima_rin.png
+    image: nakashima_rin.jpg
   sakakibara_masahiko:
     name: 榊原昌彦
     name_kana: サカキバラマサヒコ
@@ -169,7 +169,7 @@ speakers:
     description: |
       本番環境のサービスで、「データベース接続確立のエラー」「Fatal Error」「500 Internal Server
       Error」などの多くのエラーを見かけます。これはバックエンド技術でフロントエンドを書いたことから起きる悲劇。フロントエンドをちゃんとフロントエンドすれば、こういったエラーを表示しないだけではなく、オフライン表示やモバイルの「ホーム画面に追加」などの多くの恩恵を受けることができます。本セッションでは、PHPの役割を明らかにし、2018年の「ちゃんとWebをするためには」を見直します。
-    image: sakakibara_masahiko.png
+    image: sakakibara_masahiko.jpg
   takahasi_kunihiko:
     name: 高橋邦彦
     name_kana: タカハシクニヒコ
@@ -183,7 +183,7 @@ speakers:
     subtitle:
     description: |
       みなさん、CIを利用していますか？ 単純にコーディングスタイルのチェック、文法チェック、テストを行うだけではなく、様々な用途でCIを利用してみませんか？
-    image: takahasi_kunihiko.png
+    image: takahashi_kunihiko.jpg
   saita_sinya:
     name: 斉田真也
     name_kana: サイタシンヤ
@@ -202,7 +202,7 @@ speakers:
       「いや、PHPじゃないと駄目なんです！！」 と。
       ぶっちゃけPHPでないと行けない理由なんてものはありません。でも、PHPerがPHPを選択するのには理由があるのです。
       そんな、をみなさんにお渡しします（ネタ有り）
-    image: saita_sinya.png
+    image: shinya_saita.jpg
   wakaba_akira:
     name: 若葉 章
     name_kana: ワカバ アキラ
@@ -228,4 +228,4 @@ speakers:
     title: TBA
     subtitle:
     description: TBA
-    image: tba.png
+    image: tba.jpg

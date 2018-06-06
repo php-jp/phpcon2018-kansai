@@ -30,7 +30,8 @@ export default {
           {
               tracka: {
                   title:"開会挨拶",
-                  name:"太郎"
+                  name:"ショウノシオリ",
+                  image: "shono_shiori.jpg"
               },
               trackb: {
                   title:"",
