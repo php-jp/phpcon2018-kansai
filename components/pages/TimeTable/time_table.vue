@@ -107,10 +107,16 @@
     }
 
     .home-Time {
-        padding: 80px 0;
+        padding: 40px 0;
         background-color: #fff;
+        color: $clr_baseDark;
+
+        @include desktop {
+            padding: 60px 0;
+        }
+
         &_title {
-            color: #044ca4
+            @include secTitle($clr_baseDark);
         }
         &_description {
             color: #044ca4;
@@ -135,12 +141,14 @@
                 }
             }
             &A, &B, &C {
+                color: white;
                 display: none;
                 @include desktop() {
                     display: block;
                     width: 30% * 10 /7;
                     margin: 0 2px;
                     padding: 18px 0;
+                    font-size: 1.7rem;
                     font-weight: bold;
                     background-color: $clr_main;
                     border-radius: 10px 10px 0 0;
@@ -149,6 +157,7 @@
             &B {
                 @include desktop() {
                     background-color: $clr_accent;
+                    color: $clr_baseDark;
                 }
             }
             &C {

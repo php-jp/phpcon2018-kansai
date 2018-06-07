@@ -62,6 +62,7 @@
             font-weight: bold;
             line-height: 1.6;
             @include desktop() {
+                font-size: 1.7rem;
             }
         }
         &--speaker {
@@ -71,14 +72,22 @@
             left: 50%;
             top: 13em;
             transform: translateX(-50%);
+            @include desktop {
+                top: 7.6em;
+                left: 0;
+                transform: none;
+            }
         }
         &--img {
+            display: block;
             margin: 0 auto;
             margin-bottom: 5px;
-            display: block;
             width: 50px;
             border-radius: 50%;
             background: white;
+            @include desktop {
+                display: inline-block;
+            }
         }
         &--name {
             margin: 0 auto;
@@ -87,7 +96,11 @@
             text-align: center;
             font-size: 1.3rem;
             @include desktop() {
+                display: inline-block;
+                margin-left: .7em;
                 width: auto;
+                font-size: 1.6rem;
+                vertical-align: 25px;
             }
         }
 

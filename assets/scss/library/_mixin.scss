@@ -1,9 +1,18 @@
 @import "_variable";
 
+
+@mixin desktop(){
+  @media(min-width: 786px){
+    @content
+  }
+}
+
+
 @mixin button($color:$clr_base,$backgound:$clr_accent) {
   display: inline-block;
   margin-left: 5px;
   padding: 15px 30px;
+  font-size: 1.6rem;
   border-radius: 30px;
   text-decoration: none;
   color: $color;
@@ -11,6 +20,9 @@
   cursor: pointer;
   &:hover {
     opacity: .8;
+  }
+  @include desktop {
+    min-width: 210px;
   }
 }
 
@@ -47,13 +59,10 @@
 
 @mixin secTitle($color:#fff) {
   margin-top: 0;
-  margin-bottom: 40px;
+  margin-bottom: 1.2em;
   letter-spacing: 5px;
   color: $color;
-}
-
-@mixin desktop(){
-  @media(min-width: 786px){
-    @content
+  @include desktop {
+    margin-bottom: 1.5em;
   }
 }

@@ -119,6 +119,9 @@
   &--session__b,
   &--session__c{
     height: $baseHeight;
+    @include desktop {
+      height: 200px;
+    }
   }
   .session_op {
     height:60px;
@@ -174,7 +177,7 @@
   }
   &--time__small {
     width: 100-($baseWidth * 10 /7)*2;
-    background: $clr-gray;
+    background: #f7f7f7;
     text-align: left;
     z-index: 1;
     position: relative;
@@ -182,7 +185,7 @@
     }
   }
   &--timerest{
-    background: $clr-gray;
+    background: #f7f7f7;
     width: 100%;
     position: relative;
     @include desktop() {
