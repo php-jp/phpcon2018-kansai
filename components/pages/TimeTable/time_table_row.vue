@@ -84,7 +84,7 @@
     @import "~assets/scss/library/_mixin.scss";
 
     $baseWidth: 30%; // それぞれのトラックの幅
-    $baseHeight: 220px; // それぞれのトラックの高さ
+    $baseHeight: 290px; // それぞれのトラックの高さ
     $restHeight: 30px; // それぞれのトラックの高さ
     $ttrow-gutter: 10px; // 時間ごとの盾のガッター
 
@@ -136,7 +136,7 @@
   &--time {
     padding: 8px 0;
     width: 100-($baseWidth * 10 /7)*2;
-    background: $clr-gray;
+    background: #f7f7f7;
     writing-mode: vertical-rl;
     text-align: left;
     font-size: 1.3rem;
@@ -185,6 +185,7 @@
       margin-right: 2px;
     }
     &__a {
+      font-weight: bold;
       position: absolute;
       top: 50%;
       left: 50%;

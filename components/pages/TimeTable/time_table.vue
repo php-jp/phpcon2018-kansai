@@ -99,7 +99,9 @@ export default {
 <style lang="scss" scoped>
 @import "~assets/scss/library/_variable.scss";
 @import "~assets/scss/library/_mixin.scss";
-
+.st-Container {
+  padding: 0 10px;
+}
 .home-Time {
   padding: 80px 0;
   background-color: #fff;
