@@ -2,7 +2,7 @@
   <div class="home-Time">
     <div class="st-Container">
       <h2 class="home-Time_title">TIME TABLE</h2>
-      <p class="home-Time_description">初心者から上級者までが楽しめるセッションが目白押し!これから始めようと思っていたフレームワークや（仮）クリックするとセッションの詳細が確認できます。</p>
+      <p class="home-Time_description">今年のPHP カンファレンス関西は、公募申込数が過去最大！珠玉のセッションを取り揃えたPHP カンファレンス関西 2018 あなたはどのセッションを見に行きますか？</p>
       <div class="home-Time_session">
         <div class="home-Time_sessionTitle">
           <div class="home-Time_sessionHidden"></div>
