@@ -12,9 +12,12 @@
         </div>
         <time-table-row v-for="(_sessions,index) in sessions" :key="index" v-bind="_sessions"/>
       </div>
-      <div class="home-Time_Link">
-        <a href="/"><i class="fas fa-home" aria-hidden="true"></i>TOPへ戻る</a>
-      </div>
+      <router-link
+        to="/"
+        class="home-Time_Link">
+        <i class="fa fa-home" aria-hidden="true"></i>
+        <span>TOPへ戻る</span>
+      </router-link>
     </div>
   </div>
 </template>
@@ -98,7 +101,7 @@ export default {
 @import "~assets/scss/library/_mixin.scss";
 
 .home-Time {
-  padding: 70px 0;
+  padding: 80px 0;
   background-color: #fff;
   &_title {
     color:#044ca4

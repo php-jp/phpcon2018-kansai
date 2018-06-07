@@ -134,13 +134,16 @@
     height: $longHeight;
   }
   &--time {
+    padding: 8px 0;
     width: 100-($baseWidth * 10 /7)*2;
     background: $clr-gray;
     writing-mode: vertical-rl;
     text-align: left;
+    font-size: 1.3rem;
     z-index: 1;
     position: relative;
     @include desktop() {
+      padding: 0 8px;
       writing-mode: horizontal-tb;
       margin: 0 2px;
     }
@@ -148,7 +151,6 @@
       position: absolute;
       right: 50%;
       transform: translate(50%, 0);
-      padding-top: 1em;
       @include desktop() {
         left: 50%;
         right: auto;

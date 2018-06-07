@@ -7,7 +7,7 @@
       </div>
       <div class="ttsession--name" >{{session.name}}</div>
       <div class="ttsession--linksheet"></div>
-      <div class="ttsession--link">＋</div>
+      <div class="ttsession--link"><i class="fa fa-plus" aria-hidden="true"></i></div>
     </div>
     <div class="ttsession tt_else" v-else>
         <div class="ttsession--track">{{floor}}</div>
@@ -36,7 +36,7 @@
     @import "~assets/scss/library/_mixin.scss";
 
 
-$link-border-size: 1em;
+$link-border-size: 20px;
 
 .ttsession{
   width: 100%;
@@ -108,8 +108,11 @@ $link-border-size: 1em;
     bottom: 0;
     right: 0;
     text-align: center;
-
     color:white;
+    .fa {
+      vertical-align: top;
+    }
+
 
   }
   &--clong{

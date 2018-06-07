@@ -8,6 +8,7 @@
   text-decoration: none;
   color: $color;
   background: $backgound;
+  cursor: pointer;
   &:hover {
     opacity: .8;
   }
