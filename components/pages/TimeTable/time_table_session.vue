@@ -53,6 +53,9 @@
         &--inner {
             padding: 10px;
             box-sizing: border-box;
+            @include desktop {
+                padding: 20px;
+            }
         }
         &--title {
             text-align: left;

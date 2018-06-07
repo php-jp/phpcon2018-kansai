@@ -96,6 +96,10 @@
   display: flex;
   margin: $ttrow-gutter 0;
 
+  @include desktop{
+    margin: 4px 0;
+  }
+
   &--cdefaults{
     width: 100 - $baseWidth;
   }
@@ -143,7 +147,7 @@
     z-index: 1;
     position: relative;
     @include desktop() {
-      padding: 0 8px;
+      padding: 0;
       writing-mode: horizontal-tb;
       margin: 0 2px;
     }
