@@ -1,7 +1,6 @@
 <template>
     <div class="ttrow">
       <div class="ttrow--cdefaults">
-
         <div class="ttrow--cdefault">
           <div class="ttrow--time" :class="{time_op:!check}">
             <span class="ttrow--time__a" >11:00</span>
@@ -88,7 +87,7 @@
     $restHeight: 30px; // それぞれのトラックの高さ
     $ttrow-gutter: 10px; // 時間ごとの盾のガッター
 
-    $longHeight: $baseHeight * 2 + $ttrow-gutter * 2 + $restHeight;
+    $longHeight: 100%;
 
 
 .ttrow{
@@ -110,6 +109,10 @@
     display: flex;
     margin: $ttrow-gutter 0;
     height: $restHeight;
+    @include desktop {
+      margin: 4px 0 ;
+    }
+
     .ttrow--time{
       writing-mode: horizontal-tb;
       overflow: visible;
@@ -146,7 +149,6 @@
     background: #f7f7f7;
     writing-mode: vertical-rl;
     text-align: left;
-    font-size: 1.3rem;
     z-index: 1;
     position: relative;
     @include desktop() {
@@ -155,10 +157,12 @@
       margin: 0 2px;
     }
     &__a {
+      font-size: 1.3rem;
       position: absolute;
       right: 50%;
       transform: translate(50%, 0);
       @include desktop() {
+        font-size: 1.6rem;
         left: 50%;
         right: auto;
         padding: 0;
@@ -166,11 +170,13 @@
       }
     }
     &__b {
+      font-size: 1.3rem;
       position: absolute;
       top: 50%;
       left: 50%;
       transform: translate(0, -50%);
       @include desktop() {
+        font-size: 1.6rem;
         transform: translate(-25%, -50%);
       }
     }
@@ -185,6 +191,21 @@
     }
   }
   &--timerest{
+    background: #f7f7f7;
+    width: 100%;
+    position: relative;
+    @include desktop() {
+      margin-right: 2px;
+    }
+    &__a {
+      font-weight: bold;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+  &--timerestCommon{
     background: #f7f7f7;
     width: 100%;
     position: relative;

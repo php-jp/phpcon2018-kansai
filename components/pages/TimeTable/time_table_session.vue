@@ -1,5 +1,6 @@
 <template>
-    <div class="ttsession" v-if="session">
+    <!--TODO セッション情報がないときにのみ inactiveクラスをつける-->
+    <div class="ttsession inactive" v-if="session">
         <div class="ttsession--track">{{floor}}</div>
         <div class="ttsession--inner">
             <div class="ttsession--title">{{session.title}}</div>
@@ -142,6 +143,12 @@
             }
         }
     }
+    .ttsession.type-a.inactive {
+        background: rgba(4,195,174,0.1);
+        background-image: url("~/assets/images/elephant.png");
+        background-position: center;
+        background-repeat: no-repeat;
+    }
 
     .ttsession.type-b {
         background: $clr_accent_light;
@@ -168,6 +175,12 @@
             }
         }
     }
+    .ttsession.type-b.inactive {
+        background: rgba(248,231,28,0.1);
+        background-image: url("~/assets/images/elephant.png");
+        background-position: center;
+        background-repeat: no-repeat;
+    }
 
     .ttsession.type-c {
         background: $clr_base_light;
@@ -192,6 +205,12 @@
                 right: -14px;
             }
         }
+    }
+    .ttsession.type-c.inactive {
+        background: rgba(18,77,158,0.05);
+        background-image: url("~/assets/images/elephant.png");
+        background-position: center;
+        background-repeat: no-repeat;
     }
 
 

@@ -119,8 +119,11 @@
             @include secTitle($clr_baseDark);
         }
         &_description {
-            color: #044ca4;
+            color: $clr_baseDark;
             margin-bottom: 30px;
+            @include desktop {
+                margin-bottom: 50px;
+            }
         }
 
         &_session {
