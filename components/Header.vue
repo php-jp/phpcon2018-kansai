@@ -1,8 +1,10 @@
 <template>
   <header class="p-header">
-    <a href="/" class="p-header_link">
-      <div class="p-header_image"></div>
-    </a>
+    <router-link
+        to="/"
+        class="p-header_link">
+      <div class="p-header_logo"></div>
+    </router-link>
   </header>
 </template>
 
@@ -15,32 +17,26 @@
 
 .p-header {
   background-color: $clr_base;
-  position: fixed;
-  top: 0;
   width: 100%;
-  z-index: 1000;
+
   &_link {
-    display: inline-block;
+    display: block;
+    padding: 10px 0;
     width: 100%;
-    height: 60px;
-    text-decoration: none;
-    @include desktop() {
-      height: 65px;
+    @include desktop {
+      padding: 15px 0;
     }
   }
-  &_image {
-    width: 300px;
-    height: 40px;
+  &_logo {;
+    display: inline-block;
+    width: 100%;
+    height: 30px;
     background-image: url("/images/navLogo.svg");
     background-repeat: no-repeat;
     background-size: contain;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    background-position: center;
     @include desktop() {
-      width: 400px;
-      height: 50px;
+      height: 40px;
     }
   }
 }

@@ -3,7 +3,7 @@
     <sec-hero></sec-hero>
     <sec-about></sec-about>
     <!--<sec-speakers></sec-speakers>-->
-    <!--<sec-time-table></sec-time-table>-->
+    <sec-time-table></sec-time-table>
     <sec-access></sec-access>
     <sec-sponsor></sec-sponsor>
     <sec-share></sec-share>

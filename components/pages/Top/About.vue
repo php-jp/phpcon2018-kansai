@@ -36,7 +36,12 @@
   @import "~assets/scss/library/_mixin.scss";
 
   .home-Description {
-    padding: 70px 0 70px 0;
+    @include secPaddiong;
+    padding-top: 50px;
+    @include desktop {
+      padding-top: 80px;
+    }
+
     width: auto;
     background-color: $clr_base;
 
