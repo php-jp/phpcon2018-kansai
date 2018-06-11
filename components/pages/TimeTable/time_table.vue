@@ -30,9 +30,19 @@
     data() {
       return {
         sessions: [
-          {}
-          ,
           {
+            times:[
+              "10:30",
+            ],
+            tracka: {
+              title: "開場・受付",
+              image: "shono_shiori.jpg"
+            },
+          },
+          {
+            times:[
+              "10:30",
+            ],
             tracka: {
               title: "開会挨拶",
               name: "ショウノシオリ",
@@ -48,6 +58,11 @@
             },
           },
           {
+            times:[
+              "10:50",
+              "11:20",
+              "11:40",
+            ],
             tracka: [
               this.$store.state.speakers.matuhuzi_hideharu,
               this.$store.state.speakers.sugita_sota,
@@ -60,6 +75,25 @@
             trackc: this.$store.state.speakers.sakakibara_masahiko,
           },
           {
+            times:[
+              "12:10",
+            ],
+            tracka: {
+              title: "昼休み",
+            },
+            trackb: {
+              title: "昼休み",
+            },
+            trackc: {
+              title: "昼休み",
+            },
+          },
+          {
+            times:[
+              "13:10",
+              "13:40",
+              "14:00",
+            ],
             tracka: [
               this.$store.state.speakers.takahasi_yugo,
               this.$store.state.speakers.tba,
@@ -72,11 +106,47 @@
             trackc: this.$store.state.speakers.goto_hidenori,
           },
           {
+            times:[
+              "14:30",
+            ],
+            tracka: {
+              title: "昼休み",
+            },
+            trackb: {
+              title: "昼休み",
+            },
+            trackc: {
+              title: "昼休み",
+            },
+          },
+          {
+            times:[
+              "14:45",
+            ],
             tracka: this.$store.state.speakers.tba,
             trackb: this.$store.state.speakers.saita_sinya,
             trackc: this.$store.state.speakers.tba,
           },
           {
+            times:[
+              "15:15",
+            ],
+            tracka: {
+              title: "15分休憩",
+            },
+            trackb: {
+              title: "15分休憩",
+            },
+            trackc: {
+              title: "15分休憩",
+            },
+          },
+          {
+            times:[
+              "15:30",
+              "16:00",
+              "16:15",
+            ],
             tracka: [
               this.$store.state.speakers.tba,
               this.$store.state.speakers.kisida_kenitiro,
@@ -87,7 +157,39 @@
               this.$store.state.speakers.usami_kenta,
             ],
             trackc: this.$store.state.speakers.takahasi_kunihiko,
-          }
+          },
+          {
+            times: [
+              "16:45"
+            ],
+            tracka: {
+              title: "15分休憩",
+            },
+            trackb: {
+              title: "15分休憩",
+            },
+            trackc: {
+              title: "15分休憩",
+            },
+          },
+          {
+            times:[
+              "17:00",
+            ],
+            tracka: {
+              title: "LT大会",
+              image: "shono_shiori.jpg"
+            },
+          },
+          {
+            times:[
+              "17:50",
+            ],
+            tracka: {
+              title: "閉会挨拶",
+              image: "shono_shiori.jpg"
+            },
+          },
         ]
       }
     },

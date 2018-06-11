@@ -1,6 +1,5 @@
 <template>
-    <!--TODO セッション情報がないときにのみ inactiveクラスをつける-->
-    <div class="ttsession inactive" v-if="session">
+    <div :class="sessionClass" v-if="session">
         <div class="ttsession--track">{{floor}}</div>
         <div class="ttsession--inner">
             <div class="ttsession--title">{{session.title}}</div>
@@ -24,6 +23,14 @@
     props: ["session", "floor"],
     data() {
       return {}
+    },
+    computed:{
+      sessionClass(){
+        return {
+          ttsession: true,
+          inactive: this.session && !this.session.title
+        }
+      }
     },
     components: {
       TimeTableRow

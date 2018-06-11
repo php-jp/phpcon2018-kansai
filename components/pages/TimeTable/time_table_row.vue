@@ -3,7 +3,7 @@
       <div class="ttrow--cdefaults">
         <div class="ttrow--cdefault">
           <div class="ttrow--time" :class="{time_op:!check}">
-            <span class="ttrow--time__a" >11:00</span>
+            <span class="ttrow--time__a" >{{times[0]}}</span>
           </div>
           <div class="ttrow--session__a" :class="{session_op:!check}">
             <time-table-session class="type-a" floor="C01+C02" :session="tracka1" ></time-table-session>
@@ -14,7 +14,7 @@
         </div>
         <div class="ttrow--crestrow" v-if="long">
           <div class="ttrow--time__small">
-            <span class="ttrow--time__b">11:00</span>
+            <span class="ttrow--time__b">{{times[1]}}</span>
           </div>
           <div class="ttrow--timerest">
             <span class="ttrow--timerest__a">20分休憩</span>
@@ -22,7 +22,7 @@
         </div>
         <div class="ttrow--cdefault" v-if="long">
           <div class="ttrow--time">
-            <span class="ttrow--time__a">11:00</span>
+            <span class="ttrow--time__a">{{times[2]}}</span>
           </div>
           <div class="ttrow--session__a">
             <time-table-session class="type-a" floor="C01+C02" :session="tracka[1]"></time-table-session>
@@ -49,6 +49,7 @@
   import TimeTableSession from "./time_table_session"
     export default {
       props:{
+        times: {},
         tracka:{},
         trackb:{},
         trackc:{},
@@ -68,7 +69,7 @@
           return this.long? this.trackb[0] : this.trackb
         },
         check(){
-            return !!this.tracka
+            return this.tracka1.name
         }
       },
       components:{
