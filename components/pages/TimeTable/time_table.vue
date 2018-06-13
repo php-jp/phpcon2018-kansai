@@ -109,13 +109,13 @@
               "14:30",
             ],
             tracka: {
-              title: "昼休み",
+              title: "15分休憩",
             },
             trackb: {
-              title: "昼休み",
+              title: "15分休憩",
             },
             trackc: {
-              title: "昼休み",
+              title: "15分休憩",
             },
           },
           {
@@ -144,7 +144,7 @@
             times:[
               "15:30",
               "16:00",
-              "16:15",
+              "16:20",
             ],
             tracka: [
               this.$store.state.speakers.tba,
@@ -159,10 +159,10 @@
           },
           {
             times: [
-              "16:45"
+              "16:50"
             ],
             tracka: {
-              title: "15分休憩",
+              title: "10分休憩",
             },
             trackb: {
               title: "15分休憩",
