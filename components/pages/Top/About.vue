@@ -22,10 +22,6 @@
           <i class="fa fa-microphone" aria-hidden="true"></i>
           <span>&nbsp;LT募集</span>
         </a>
-        <a class="home-Wanted_Sponsor" href="https://goo.gl/forms/xc8u1MDlA80ILheC2" target="_blank">
-          <i class="fa fa-user" aria-hidden="true"></i>
-          <span>&nbsp;当日スタッフ募集</span>
-        </a>
       </div>
     </div>
   </div>
