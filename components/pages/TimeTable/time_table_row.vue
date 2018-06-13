@@ -17,7 +17,7 @@
             <span class="ttrow--time__b">{{times[1]}}</span>
           </div>
           <div class="ttrow--timerest">
-            <span class="ttrow--timerest__a">20分休憩</span>
+            <span class="ttrow--timerest__a">15分休憩</span>
           </div>
         </div>
         <div class="ttrow--cdefault" v-if="long">
