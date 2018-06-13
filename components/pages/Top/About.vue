@@ -18,11 +18,11 @@
       <div class="home-Wanted" id="home-Wanted">
         <h2 class="home-Wanted_Title">Wanted!</h2>
         <p class="home-Wanted_Description">間もなく開催 PHPカンファレンス関西 2018<br>当日スタッフ LT参加者募集中です！</p>
-        <a class="home-Wanted_Speaker" href="https://goo.gl/forms/HiucMV4wSXL2nZuE3" target="_blank">
+        <a class="home-Wanted_Speaker" href="https://goo.gl/forms/jfF5X8kH56glakzY2" target="_blank">
           <i class="fa fa-microphone" aria-hidden="true"></i>
           <span>&nbsp;LT募集</span>
         </a>
-        <a class="home-Wanted_Sponsor" href="https://goo.gl/forms/6hQhy1UyF2dbLI132" target="_blank">
+        <a class="home-Wanted_Sponsor" href="https://goo.gl/forms/xc8u1MDlA80ILheC2" target="_blank">
           <i class="fa fa-user" aria-hidden="true"></i>
           <span>&nbsp;当日スタッフ募集</span>
         </a>
