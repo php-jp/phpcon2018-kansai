@@ -13,7 +13,7 @@
     <div class="home-Title_CloudRight"></div>
     <div class="home-Title_Wave"></div>
     <div class="home-Title_Elephants">
-      <a class="home-Title_Attention" href="#home-Wanted">スポンサー募集中！</a>
+      <a class="home-Title_Attention" href="https://phpcon-kansai-2018.peatix.com/">チケット販売中！</a>
       <div class="home-Title_Elephant"></div>
     </div>
   </div>
