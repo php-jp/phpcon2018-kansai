@@ -60,7 +60,7 @@
             times:[
               "10:50",
               "11:20",
-              "11:40",
+              "11:35",
             ],
             tracka: [
               this.$store.state.speakers.matuhuzi_hideharu,
@@ -75,7 +75,7 @@
           },
           {
             times:[
-              "12:10",
+              "12:05",
             ],
             tracka: {
               title: "昼休み",
@@ -91,7 +91,7 @@
             times:[
               "13:10",
               "13:40",
-              "14:00",
+              "13:55",
             ],
             tracka: [
               this.$store.state.speakers.takahasi_yugo,
@@ -106,7 +106,7 @@
           },
           {
             times:[
-              "14:30",
+              "14:25",
             ],
             tracka: {
               title: "15分休憩",
@@ -142,8 +142,8 @@
           },
           {
             times:[
-              "15:30",
-              "16:00",
+              "15:35",
+              "16:05",
               "16:20",
             ],
             tracka: [
