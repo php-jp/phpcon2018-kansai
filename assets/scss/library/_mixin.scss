@@ -1,13 +1,27 @@
 @import "_variable";
 
+
+@mixin desktop(){
+  @media(min-width: 786px){
+    @content
+  }
+}
+
+
 @mixin button($color:$clr_base,$backgound:$clr_accent) {
   display: inline-block;
   margin-left: 5px;
   padding: 15px 30px;
+  font-size: 1.6rem;
+  font-weight: bold;
   border-radius: 30px;
   text-decoration: none;
   color: $color;
   background: $backgound;
+  cursor: pointer;
+  @include desktop {
+    min-width: 210px;
+  }
   &:hover {
     opacity: .8;
   }
@@ -19,12 +33,14 @@
     display: block;
     margin-right: 5px;
     padding: 15px 45px;
-    font-size: 16px;
+    font-size: 1.6rem;
+    font-weight: bold;
     color: $color;
     text-decoration: none;
     position: relative;
     background: $backgound;
     border-radius: 30px;
+
     &:hover {
       opacity: .8;
     }
@@ -46,13 +62,17 @@
 
 @mixin secTitle($color:#fff) {
   margin-top: 0;
-  margin-bottom: 40px;
+  margin-bottom: 1.2em;
   letter-spacing: 5px;
   color: $color;
+  @include desktop {
+    margin-bottom: 1.5em;
+  }
 }
 
-@mixin desktop(){
-  @media(min-width: 786px){
-    @content
+@mixin secPaddiong {
+  padding: 30px 0 70px;
+  @include desktop {
+    padding: 40px 0 60px;
   }
 }

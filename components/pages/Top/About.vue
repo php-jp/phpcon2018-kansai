@@ -16,15 +16,11 @@
         </div>
       </div>
       <div class="home-Wanted" id="home-Wanted">
-        <h2 class="home-Wanted_Title">Wanted! <br>Speaker and Sponsor</h2>
-        <p class="home-Wanted_Description">PHPerの夏がもっと熱くなるようなトークをして頂けるスピーカー様、<br>ご協賛頂けるスポンサー様を募集しています。<br>皆様のご応募・ご協賛をお待ちしております。</p>
-        <!--<a class="home-Wanted_Speaker" href="https://goo.gl/forms/HiucMV4wSXL2nZuE3" target="_blank">-->
-          <!--<i class="fa fa-microphone" aria-hidden="true"></i>-->
-          <!--<span>&nbsp;スピーカー申込み</span>-->
-        <!--</a>-->
-        <a class="home-Wanted_Sponsor" href="https://goo.gl/forms/6hQhy1UyF2dbLI132" target="_blank">
-          <i class="fa fa-star fa-lg" aria-hidden="true"></i>
-          <span>&nbsp;スポンサー申込み</span>
+        <h2 class="home-Wanted_Title">Wanted!</h2>
+        <p class="home-Wanted_Description">間もなく開催 PHPカンファレンス関西 2018<br>本編最後のコンテンツ、LT参加者募集中です！</p>
+        <a class="home-Wanted_Speaker" href="https://goo.gl/forms/jfF5X8kH56glakzY2" target="_blank">
+          <i class="fa fa-microphone" aria-hidden="true"></i>
+          <span>&nbsp;LT募集 申し込み</span>
         </a>
       </div>
     </div>
@@ -36,7 +32,12 @@
   @import "~assets/scss/library/_mixin.scss";
 
   .home-Description {
-    padding: 70px 0 70px 0;
+    @include secPaddiong;
+    padding-top: 50px;
+    @include desktop {
+      padding-top: 80px;
+    }
+
     width: auto;
     background-color: $clr_base;
 
@@ -101,7 +102,7 @@
       width: 100%;
       padding: 15px 15px;
       @include desktop() {
-        margin: 0 0 10px 5px;
+        margin: 0 15px 10px 5px;
         padding: 15px 30px;
       }
     }

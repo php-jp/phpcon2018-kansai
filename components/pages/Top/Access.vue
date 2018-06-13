@@ -57,9 +57,10 @@
   @import "~assets/scss/library/_mixin.scss";
 
   .home-Access {
-    padding: 70px 0 70px 0;
+    @include secPaddiong;
     width: auto;
     background-color: $clr_main;
+    position: relative;
 
     &_Wave {
       width: 100%;
@@ -67,8 +68,8 @@
       background-image: url("~/assets/images/wavyLine-keyColor.png");
       background-repeat: repeat-x;
       background-size: contain;
-      position: relative;
-      top: -90px;
+      position: absolute;
+      bottom:100%
     }
 
     &_Title {
@@ -80,7 +81,7 @@
       width: 100%;
       margin-left: auto;
       margin-right: auto;
-      margin-bottom: 2em;
+      margin-bottom: 20px;
       img{
         width: 100%;
       }
@@ -95,7 +96,6 @@
       height: 250px;
       margin: 0 auto;
       margin-bottom: 15px;
-      /*background: #ccc;*/
 
       @include desktop() {
         margin-bottom: 30px;
@@ -109,6 +109,8 @@
 
     &_Place {
       margin-bottom: 20px;
+      font-size: 1.8rem;
+      font-weight: bold;
     }
 
     &_Address {

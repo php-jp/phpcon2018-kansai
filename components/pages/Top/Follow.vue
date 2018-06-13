@@ -27,10 +27,11 @@
   @import "~assets/scss/library/_mixin.scss";
 
   .home-Follow {
+    @include secPaddiong;
     width: auto;
     color: $clr_base;
     background-color: #fff;
-    padding: 70px 0;
+    position: relative;
 
     &_Wave {
       width: 100%;
@@ -38,8 +39,8 @@
       background-image: url("~/assets/images/wavyLine-white.png");
       background-repeat: repeat-x;
       background-size: contain;
-      position: relative;
-      top: -90px;
+      position: absolute;
+      bottom:100%
     }
 
     &_Title {
