@@ -109,13 +109,13 @@
               "14:25",
             ],
             tracka: {
-              title: "15分休憩",
+              title: "20分休憩",
             },
             trackb: {
-              title: "15分休憩",
+              title: "20分休憩",
             },
             trackc: {
-              title: "15分休憩",
+              title: "20分休憩",
             },
           },
           {
@@ -131,13 +131,13 @@
               "15:15",
             ],
             tracka: {
-              title: "15分休憩",
+              title: "20分休憩",
             },
             trackb: {
-              title: "15分休憩",
+              title: "20分休憩",
             },
             trackc: {
-              title: "15分休憩",
+              title: "20分休憩",
             },
           },
           {
@@ -165,10 +165,10 @@
               title: "10分休憩",
             },
             trackb: {
-              title: "15分休憩",
+              title: "10分休憩",
             },
             trackc: {
-              title: "15分休憩",
+              title: "10分休憩",
             },
           },
           {
