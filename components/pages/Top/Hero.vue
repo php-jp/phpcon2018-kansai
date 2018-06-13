@@ -201,6 +201,7 @@
       background: $clr_accent;
       position: relative;
       top: -60px;
+      text-decoration: underline;
 
       &::after {
         display: inline-block;
