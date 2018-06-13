@@ -32,11 +32,10 @@
         sessions: [
           {
             times:[
-              "10:30",
+              "10:00",
             ],
             tracka: {
               title: "開場・受付",
-              image: "shono_shiori.jpg"
             },
           },
           {
