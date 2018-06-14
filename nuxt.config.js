@@ -1,4 +1,5 @@
 const path = require('path');
+const axios = require('axios');
 
 module.exports = {
   /*
@@ -54,4 +55,21 @@ module.exports = {
     // '~/plugins/gmap_plugin.js'
     '~/plugins/lazyload.js',
   ],
+  generate: {
+    routes: [
+      '/session/hishida_hiromi',
+      '/session/takahasi_yugo',
+      '/session/sugita_sota',
+      '/session/goto_hidenori',
+      '/session/usami_kenta',
+      '/session/matuhuzi_hideharu',
+      '/session/suzuki_siniti',
+      '/session/kisida_kenitiro',
+      '/session/nakasima_rin',
+      '/session/sakakibara_masahiko',
+      '/session/takahasi_kunihiko',
+      '/session/saita_sinya',
+      '/session/wakaba_akira'
+    ]
+  },
 };

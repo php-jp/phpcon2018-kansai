@@ -15,6 +15,7 @@
   "dependencies": {
     "@nuxtjs/font-awesome": "^1.0.3",
     "@nuxtjs/pwa": "^2.0.8",
+    "axios": "^0.18.0",
     "node-sass": "^4.8.3",
     "nuxt": "^1.4.0",
     "sass-loader": "^6.0.7",
