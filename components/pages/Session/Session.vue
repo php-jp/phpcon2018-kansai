@@ -2,72 +2,86 @@
   <div class="home-Session">
     <div class="st-Container">
       <h2 class="home-Session_title">SESSION</h2>
-      <p class="home-Session_text">初心者から上級者まで楽しめるセッションが目白押し!これから始めようと思っていたフレームワークや、気になっていた技術についての情報が得られるかも!?（仮）クリックするとセッション詳細が確認できます</p>
-      <div class="home-Session_overScroll">
-        <div class="home-Session_TimeSelect">
-          <div class="home-Session_Time" v-for="time in times" :key="time.time" >
-            <p class="home-Session_TimeStyle">{{time.time}}</p>
-          </div>
-        </div>
-      </div>
+      <p class="home-Session_text">
+        初心者から上級者まで楽しめるセッションが目白押し!
+        これから始めようと思っていたフレームワークや、気になっていた技術についての情報が得られるかも!?
+        あなたはどのセッションを見に行きますか？
+      </p>
+      <!--<div class="home-Session_overScroll">-->
+        <!--<div class="home-Session_TimeSelect">-->
+          <!--<div class="home-Session_Time" v-for="time in times" :key="time.time" >-->
+            <!--<p class="home-Session_TimeStyle">{{time.time}}</p>-->
+          <!--</div>-->
+        <!--</div>-->
+      <!--</div>-->
       <div class="home-Session_Main">
-        <h3 class="home-Session_RoomNumber">Room C01+C02</h3>
+        <h3 class="home-Session_RoomNumber">{{session.room}}</h3>
         <div class="home-Session_MainWrap">
-          <span class="home-Session_TimeSchedule">10:00 - 11:40</span>
-          <h3 class="home-Session_MainTitle">25字でできるPHPできるあんなことやこんなこと</h3>
-          <h5 class="home-Session_MainSubTitle">- サブタイトルがある場合、このエリアに入ります。 -</h5>
-          <div class="home-Session_MainText">
-            <p>PHP5.3以降PHPはめまぐるしい変化を遂げ様々な新機能が追加されてきました。新しく追加された機能の一つ一つは、便利で有用なものの、まだ使った事がない、よくわからないという人も多いのではないでしょうか？</p>
-            <p>Composerって何だろう、というところから、PHP7.1最新の新機能まで、今現場で使えるPHPの新機能をおさらいしていきましょう。</p>
-          </div>
+          <!--<span class="home-Session_TimeSchedule">10:00 - 11:40</span>-->
+          <h3 class="home-Session_MainTitle">{{session.title}}</h3>
+          <h5 class="home-Session_MainSubTitle" v-if="session.subtitle">{{session.subtitle}}</h5>
+          <div class="home-Session_MainText" v-html="session.description"></div>
           <div class="home-Session_Profile">
             <div class="home-Session_ProfileImgWrap">
-              <div class="home-Session_ProfileImg"></div>
+              <div class="home-Session_ProfileImg" :style="sessionImg"></div>
             </div>
             <div class="home-Session_Personal">
-              <div class="home-Session_ProfileName">安井 利紗</div>
-              <div class="home-Session_ProfileCompany">株式会社chatbox</div>
-              <p class="home-Session_ProfileText">Web制作のご相談、技術顧問に関するご相談、イベント・スクールに関するお問い合わせなど、 chatbox に関する相談・ご質問はお気軽に下記「お問い合わせフォーム」からお願いいたします。</p>
+              <div class="home-Session_ProfileName">{{session.name}}</div>
+              <div class="home-Session_ProfileCompany" v-if="session.team">{{session.team}}</div>
+              <p class="home-Session_ProfileText" v-html="session.profile"></p>
             </div>
             <div class="home-Session_Links">
-              <a href="" class="home-Session_Twitter"><i class="fa fa-twitter fa-2x" aria-hidden="true"></i></a>
-              <a href="" class="home-Session_Facebook"><i class="fa fa-facebook fa-2x" aria-hidden="true"></i></a>
-              <a href="" class="home-Session_Link"><i class="fas fa-link"></i></a>
+              <a :href="link.link" target="_blank" class="home-Session_Link"
+                 v-for="(link,key) in session.link" :key="key">
+                  <i v-if="link.type=='twitter'" class="fa fa-twitter fa-2x" aria-hidden="true"/>
+                  <i v-if="link.type=='facebook'" class="fa fa-facebook fa-2x" aria-hidden="true"/>
+                  <i v-if="link.type!='twitter' && link.type!='facebook' " class="fa fa-link fa-2x" aria-hidden="true"/>
+              </a>
             </div>
           </div>
         </div>
       </div>
-      <div class="home-Session_Other">
-        <h2>同時刻の他のセッション</h2>
-        <div class="home-Session_Lists">
-          <div class="home-Session_List" v-for="item in items" :key="item.item">
-            <h3 class="home-Session_OtherRoomNumber">{{item.room}}</h3>
-            <a href="" class="home-Session_Item">
-              <div class="home-Session_OtherDescription">
-                <div class="home-Session_OtherImg"></div>
-                <p class="home-Session_OtherText">{{item.msg}}</p>
-                <div class="home-Session_OtherIcon"><i class="fas fa-plus" aria-hidden="true"></i></div>
-              </div>
-            </a>
-          </div>
-        </div>
-      </div>
+      <!--<div class="home-Session_Other">-->
+        <!--<h2>同時刻の他のセッション</h2>-->
+        <!--<div class="home-Session_Lists">-->
+          <!--<div class="home-Session_List" v-for="item in items" :key="item.item">-->
+            <!--<h3 class="home-Session_OtherRoomNumber">{{item.room}}</h3>-->
+            <!--<a href="" class="home-Session_Item">-->
+              <!--<div class="home-Session_OtherDescription">-->
+                <!--<div class="home-Session_OtherImg"></div>-->
+                <!--<p class="home-Session_OtherText">{{item.msg}}</p>-->
+                <!--<div class="home-Session_OtherIcon"><i class="fas fa-plus" aria-hidden="true"></i></div>-->
+              <!--</div>-->
+            <!--</a>-->
+          <!--</div>-->
+        <!--</div>-->
+      <!--</div>-->
     </div>
   </div>
 </template>
 
 <script>
     export default {
+      props:{
+        session: {
+          type: Object
+        }
+      },
+      computed:{
+        sessionImg(){
+          return {"background-image":`url("/images/speakers/${this.session.image}")`}
+        }
+      },
         data () {
             return {
                 clickNumber:0,
                 isSelect:false,
                 times:[
                     {time:'10:00'},
-                    {time:'10:00'},
-                    {time:'10:00'},
-                    {time:'10:00'},
-                    {time:'10:00'},
+                    {time:'11:00'},
+                    {time:'12:00'},
+                    {time:'13:00'},
+                    {time:'14:00'},
                 ],
                 items:[
                     {room:'Room C01+C02', msg:'25文字でできるPHPできるあんなことやこんなこと'},
@@ -161,7 +175,7 @@
       }
     }
     &_ProfileImg {
-      background-image: url('http://placehold.it/150x150');
+      /*background-image: url('http://placehold.it/150x150');*/
       width: 150px;
       height: 150px;
       background-size: contain;
@@ -196,46 +210,6 @@
         text-align: left;
       }
     }
-    &_Twitter {
-      position: relative;
-      top: 0;
-      display: inline-block;
-      width: 45px;
-      height: 45px;
-      border-radius: 50%;
-      background-color: #ccc;
-      margin: 0 10px;
-      @include desktop() {
-        margin: 0 0 0 10px;
-      }
-      i {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        color: $clr_baseDark;
-      }
-    }
-    &_Facebook {
-      position: relative;
-      top: 0;
-      display: inline-block;
-      width: 45px;
-      height: 45px;
-      border-radius: 50%;
-      background-color: #ccc;
-      margin: 0 10px;
-      @include desktop() {
-        margin: 0 0 0 10px;
-      }
-      i {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        color: $clr_baseDark;
-      }
-    }
     &_Link {
       position: relative;
       top: 0;
@@ -249,6 +223,7 @@
         margin: 0 0 0 10px;
       }
       i {
+        font-size: 1.5em;
         position: absolute;
         top: 50%;
         left: 50%;

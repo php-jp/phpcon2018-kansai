@@ -5,24 +5,24 @@
     <div class="st-Container">
       <h2 class="home-Other-title">OTHER SESSION</h2>
       <div class="home-Other-list">
-        <div class="home-Other_session" v-for="session in sessions" :key="session.title" >
+        <div class="home-Other_session" v-if="key !== target && key !== 'tba'" v-for="(session,key) in sessions" :key="session.title" >
           <!--<img src="" alt="dummy" class="home-Session_Img" >-->
-          <div class="home-Other_Img"></div>
+          <div class="home-Other_Img" :style="sessionImage(session)"></div>
           <p class="home-Other_description">{{session.title}}</p>
-          <div class="home-Other_triangle">
+          <router-link class="home-Other_triangle" :to="`/session/${key}`">
             <i class="fa fa-plus" aria-hidden="true"></i>
-          </div>
+          </router-link>
         </div>
       </div>
       <div class="home-Other_link">
-        <a href="" target="_blank" class="home-Other_Btn">
+        <router-link to="/timeTable" class="home-Other_Btn">
           <i class="fa fa-calendar-check-o" aria-hidden="true"></i>
           <span>タイムテーブルへ</span>
-        </a>
-        <a href="" target="_blank" class="home-Other_Btn">
+        </router-link>
+        <router-link to="/" class="home-Other_Btn">
           <i class="fa fa-home" aria-hidden="true"></i>
           <span>TOPへ戻る</span>
-        </a>
+        </router-link>
       </div>
     </div>
   </div>
@@ -30,20 +30,25 @@
 
 <script>
     export default {
+      props:{
+        target:{}
+      },
         data() {
             return {
-//                dummy
-                sessions: [
-                    {title: '25文字でできるPHPできるあんなことやこんなこと'},
-                    {title: '25文字でできるPHPできるあんなことやこんなこと'},
-                    {title: '25文字でできるPHPできるあんなことやこんなこと'},
-                    {title: '25文字でできるPHPできるあんなことやこんなこと'},
-                    {title: '25文字でできるPHPできるあんなことやこんなこと'},
-                    {title: '25文字でできるPHPできるあんなことやこんなこと'}
-
-                ]
+                sessions: []
             }
-        }
+        },
+      methods:{
+          sessionImage(session){
+            return {
+              "background-image": `url('/images/speakers/${session.image}')`
+            }
+          }
+      },
+      mounted(){
+        const {speakers} = require("json-loader!yaml-loader!~/contents/speakers.yml");
+        this.sessions = speakers
+      }
     }
 
 </script>
@@ -92,6 +97,7 @@
         height: 60px;
         width: 60px;
         transform: translateX(-50%);
+        background-size: cover;
       }
       .home-Other_description {
         position: relative;

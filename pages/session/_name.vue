@@ -1,10 +1,12 @@
 <template>
   <section>
-    <sec-section></sec-section>
-    <sec-other-section></sec-other-section>
-    <sec-share></sec-share>
-    <sec-follow></sec-follow>
-    <p-footer></p-footer>
+    <div v-if="session">
+      <sec-section :session="session"></sec-section>
+      <sec-other-section :target="name"></sec-other-section>
+      <sec-share></sec-share>
+      <sec-follow></sec-follow>
+      <p-footer></p-footer>
+    </div>
   </section>
 </template>
 
@@ -26,18 +28,30 @@
       pFooter
 
     },
-    data () {
+    computed:{
+      name(){
+        return this.$route.params.name
+      }
+    },
+    data() {
       return {
-        title: ''
+        session: {},
       }
     },
     created () {
-      const title = require("json-loader!yaml-loader!~/contents/speakers.yml");
-      this.title = title.speakers.hishida_hiromi.title
+      const {speakers} = require("json-loader!yaml-loader!~/contents/speakers.yml");
+      this.session = speakers[this.name]
     },
     head () {
       return {
-        title: this.title
+        title: `${this.session.title } | ${this.session.name } | PHP カンファレンス関西 2018`,
+        meta: [
+          { property: 'og:title', content: `${this.session.title } | ${this.session.name } | PHP カンファレンス関西 2018` },
+          { property: 'og:image', content: 'https://2018.kphpug.jp/images/ogp.jpg' },
+          { property: 'og:url', content: 'https://2018.kphpug.jp/time_table' },
+          { property: 'og:description', content: this.session.description },
+          { name: 'description', content: this.session.description }
+        ]
       }
     },
   }

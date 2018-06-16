@@ -1,5 +1,6 @@
 speakers:
   hishida_hiromi:
+    room: C05
     name: 菱田裕美
     name_kana: ヒシダヒロミ
     team: 株式会社カルテットコミュニケーションズ
@@ -16,6 +17,7 @@ speakers:
       受託時代〜会社員時代を通して、いつも「(速さ|早さ)は力」を掲げて開発しています。そのために実践していることを発表したいと思います。
     image: hishida_hiromi.jpg
   takahasi_yugo:
+    room: C01+C02
     name: 高橋侑吾
     name_kana: タカハシユウゴ
     team: KLab株式会社
@@ -32,6 +34,7 @@ speakers:
       個々の具体的なチューニング技法の紹介というよりも、そのチューニングに至るまでの考え方や負荷に対するアプローチの仕方にフォーカスしたいと思います。
     image: takahashi_yugo.jpg
   sugita_sota:
+    room: C01+C02
     name: 杉浦颯太
     name_kana: スギウラソウタ
     team: 株株式会社メルカリ
@@ -53,6 +56,7 @@ speakers:
       またいかなる場面でInterfaceを採用すべきなのかをケーススタディを交えてお話をします。
     image: sugiura_sota.png
   goto_hidenori:
+    room: C07
     name: 後藤 秀宣
     name_kana: ゴトウヒデノリ
     team: 株式会社カルテットコミュニケーションズ
@@ -70,6 +74,7 @@ speakers:
       PHPerKaigi 2018でベストトーク賞の講演を再構成して、オープン・クローズドの原則の範囲の外にある設計との関係性や、コード設計の機微に触れます。
     image: goto_hidenori.png
   usami_kenta:
+    room: C05
     name: うさみけんた
     name_kana: ウサミケンタ
     team: ピクシブ株式会社
@@ -88,6 +93,7 @@ speakers:
       2007年に開設されたイラストSNS「pixiv」は当初からフレームワークなしのPHPで構築され、現在まで引き継がれてきました。フレームワークの専門家によって設計されたわけではない「ふつうのPHP」がどのように発展し、継続的な開発のためにメンテナンス性やテストなどの問題と向き合ってきたかについて、技術的な概要を紹介いたします。
     image: usami_kenta.png
   matuhuzi_hideharu:
+    room: C01+C02
     name: 松藤秀治
     name_kana: マツフジヒデハル
     team: 株式会社ND&I
@@ -102,6 +108,7 @@ speakers:
       今やエンジニアは引く手あまたです。このカンファレンスでもたくさんの募集が出ていると思います。エンジニアを増やすために初心者を育成することは今や業界全体の重要な課題となっています。そこで初心者に何をどう教えるのかについてお話したいと思います。もちろん初心者の方も歓迎です。
     image: matsufuji_hideharu.png
   suzuki_siniti:
+    room: C05
     name: xinsuzuki
     name_kana: スズキシンイチ
     team:
@@ -122,6 +129,7 @@ speakers:
       さぁ、あなたも今日からコミュニティを通じて、関西を盛り上げてみませんか？
     image: xinsuzuki.jpg
   kisida_kenitiro:
+    room: C01+C02
     name: 岸田健一郎
     name_kana: キシダケンイチロウ
     team: 株式会社永和システムマネジメント
@@ -140,6 +148,7 @@ speakers:
       GAEへデプロイする最新情報をお届けします。
     image: kishida_kenichiro.jpg
   nakasima_rin:
+    room: C05
     name: 中島凜
     name_kana: ナカシマ リン
     team: 株式会社ORATTA
@@ -171,6 +180,7 @@ speakers:
       Error」などの多くのエラーを見かけます。これはバックエンド技術でフロントエンドを書いたことから起きる悲劇。フロントエンドをちゃんとフロントエンドすれば、こういったエラーを表示しないだけではなく、オフライン表示やモバイルの「ホーム画面に追加」などの多くの恩恵を受けることができます。本セッションでは、PHPの役割を明らかにし、2018年の「ちゃんとWebをするためには」を見直します。
     image: sakakibara_masahiko.jpg
   takahasi_kunihiko:
+    room: C07
     name: 高橋邦彦
     name_kana: タカハシクニヒコ
     team: 合同会社ねこもり
@@ -185,6 +195,7 @@ speakers:
       みなさん、CIを利用していますか？ 単純にコーディングスタイルのチェック、文法チェック、テストを行うだけではなく、様々な用途でCIを利用してみませんか？
     image: takahashi_kunihiko.jpg
   saita_sinya:
+    room: C05
     name: 斉田真也
     name_kana: サイタシンヤ
     team: 株式会社ロックオン
@@ -204,6 +215,7 @@ speakers:
       そんな、をみなさんにお渡しします（ネタ有り）
     image: shinya_saita.jpg
   wakaba_akira:
+    room: C05
     name: 若葉 章
     name_kana: ワカバ アキラ
     team: Project ICKX

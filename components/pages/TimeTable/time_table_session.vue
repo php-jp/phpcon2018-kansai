@@ -8,7 +8,7 @@
             <img class="ttsession--img" v-lazy="`/images/speakers/${session.image}`" v-if="session.image">
             <span class="ttsession--name">{{session.name}}</span>
         </div>
-        <div class="ttsession--linksheet"></div>
+        <router-link :to="`/session/`" class="ttsession--linksheet"></router-link>
     </div>
     <div class="ttsession tt_else" v-else>
         <div class="ttsession--track">{{floor}}</div>
