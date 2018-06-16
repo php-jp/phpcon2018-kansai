@@ -6,7 +6,7 @@
       <div class="home-Past">
         <p>過去のイベントの様子はこちら</p>
         <div class="home-Past_List">
-          <a href="https://2017.kphpug.jp/" target="_blank">2017</a>
+          <a href="https://2017.kphpug.jp/" rel="noopener" target="_blank">2017</a>
           <a href="http://conference.kphpug.jp/2016/" rel="noopener" target="_blank">2016</a>
           <a href="http://conference.kphpug.jp/2015/" rel="noopener" target="_blank">2015</a>
           <a href="http://conference.kphpug.jp/2014/" rel="noopener" target="_blank">2014</a>
