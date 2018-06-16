@@ -7,12 +7,12 @@
         <p>過去のイベントの様子はこちら</p>
         <div class="home-Past_List">
           <a href="https://2017.kphpug.jp/" target="_blank">2017</a>
-          <a href="http://conference.kphpug.jp/2016/" target="_blank">2016</a>
-          <a href="http://conference.kphpug.jp/2015/" target="_blank">2015</a>
-          <a href="http://conference.kphpug.jp/2014/" target="_blank">2014</a>
-          <a href="http://conference.kphpug.jp/2013/" target="_blank">2013</a>
-          <a href="http://conference.kphpug.jp/2012/" target="_blank">2012</a>
-          <a href="http://conference.kphpug.jp/2011/" target="_blank">2011</a>
+          <a href="http://conference.kphpug.jp/2016/" rel="noopener" target="_blank">2016</a>
+          <a href="http://conference.kphpug.jp/2015/" rel="noopener" target="_blank">2015</a>
+          <a href="http://conference.kphpug.jp/2014/" rel="noopener" target="_blank">2014</a>
+          <a href="http://conference.kphpug.jp/2013/" rel="noopener" target="_blank">2013</a>
+          <a href="http://conference.kphpug.jp/2012/" rel="noopener" target="_blank">2012</a>
+          <a href="http://conference.kphpug.jp/2011/" rel="noopener" target="_blank">2011</a>
         </div>
       </div>
       <div class="home-Wanted" id="home-Wanted">
