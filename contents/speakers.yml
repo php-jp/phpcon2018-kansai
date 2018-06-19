@@ -1,5 +1,6 @@
 speakers:
   hishida_hiromi:
+    key: hishida_hiromi
     room: C05
     name: 菱田裕美
     name_kana: ヒシダヒロミ
@@ -17,6 +18,7 @@ speakers:
       受託時代〜会社員時代を通して、いつも「(速さ|早さ)は力」を掲げて開発しています。そのために実践していることを発表したいと思います。
     image: hishida_hiromi.jpg
   takahasi_yugo:
+    key: takahasi_yugo
     room: C01+C02
     name: 高橋侑吾
     name_kana: タカハシユウゴ
@@ -34,6 +36,7 @@ speakers:
       個々の具体的なチューニング技法の紹介というよりも、そのチューニングに至るまでの考え方や負荷に対するアプローチの仕方にフォーカスしたいと思います。
     image: takahashi_yugo.jpg
   sugita_sota:
+    key: sugita_sota
     room: C01+C02
     name: 杉浦颯太
     name_kana: スギウラソウタ
@@ -56,8 +59,9 @@ speakers:
       またいかなる場面でInterfaceを採用すべきなのかをケーススタディを交えてお話をします。
     image: sugiura_sota.png
   goto_hidenori:
+    key: goto_hidenori
     room: C07
-    name: 後藤 秀宣
+    name: 後藤秀宣
     name_kana: ゴトウヒデノリ
     team: 株式会社カルテットコミュニケーションズ
     profile: |
@@ -74,6 +78,7 @@ speakers:
       PHPerKaigi 2018でベストトーク賞の講演を再構成して、オープン・クローズドの原則の範囲の外にある設計との関係性や、コード設計の機微に触れます。
     image: goto_hidenori.png
   usami_kenta:
+    key: usami_kenta
     room: C05
     name: うさみけんた
     name_kana: ウサミケンタ
@@ -93,6 +98,7 @@ speakers:
       2007年に開設されたイラストSNS「pixiv」は当初からフレームワークなしのPHPで構築され、現在まで引き継がれてきました。フレームワークの専門家によって設計されたわけではない「ふつうのPHP」がどのように発展し、継続的な開発のためにメンテナンス性やテストなどの問題と向き合ってきたかについて、技術的な概要を紹介いたします。
     image: usami_kenta.png
   matuhuzi_hideharu:
+    key: matuhuzi_hideharu
     room: C01+C02
     name: 松藤秀治
     name_kana: マツフジヒデハル
@@ -108,6 +114,7 @@ speakers:
       今やエンジニアは引く手あまたです。このカンファレンスでもたくさんの募集が出ていると思います。エンジニアを増やすために初心者を育成することは今や業界全体の重要な課題となっています。そこで初心者に何をどう教えるのかについてお話したいと思います。もちろん初心者の方も歓迎です。
     image: matsufuji_hideharu.png
   suzuki_siniti:
+    key: suzuki_siniti
     room: C05
     name: xinsuzuki
     name_kana: スズキシンイチ
@@ -129,6 +136,7 @@ speakers:
       さぁ、あなたも今日からコミュニティを通じて、関西を盛り上げてみませんか？
     image: xinsuzuki.jpg
   kisida_kenitiro:
+    key: kisida_kenitiro
     room: C01+C02
     name: 岸田健一郎
     name_kana: キシダケンイチロウ
@@ -148,6 +156,7 @@ speakers:
       GAEへデプロイする最新情報をお届けします。
     image: kishida_kenichiro.jpg
   nakasima_rin:
+    key: nakasima_rin
     room: C05
     name: 中島凜
     name_kana: ナカシマ リン
@@ -165,6 +174,7 @@ speakers:
       テンプレートの記法がHTML拡張っぽくて学習コスト及び心理的ハードルが低いVue.jsの開発環境をLaravelの新規プロジェクト内にサクっと作る方法から、Vue.jsのいいところ悪いところハマりどころ、Vue.js開発のすごいところなど。
     image: nakashima_rin.jpg
   sakakibara_masahiko:
+    key: sakakibara_masahiko
     name: 榊原昌彦
     name_kana: サカキバラマサヒコ
     team: 一般社団法人リレーションデザイン研究所
@@ -180,6 +190,7 @@ speakers:
       Error」などの多くのエラーを見かけます。これはバックエンド技術でフロントエンドを書いたことから起きる悲劇。フロントエンドをちゃんとフロントエンドすれば、こういったエラーを表示しないだけではなく、オフライン表示やモバイルの「ホーム画面に追加」などの多くの恩恵を受けることができます。本セッションでは、PHPの役割を明らかにし、2018年の「ちゃんとWebをするためには」を見直します。
     image: sakakibara_masahiko.jpg
   takahasi_kunihiko:
+    key: takahasi_kunihiko
     room: C07
     name: 高橋邦彦
     name_kana: タカハシクニヒコ
@@ -195,6 +206,7 @@ speakers:
       みなさん、CIを利用していますか？ 単純にコーディングスタイルのチェック、文法チェック、テストを行うだけではなく、様々な用途でCIを利用してみませんか？
     image: takahashi_kunihiko.jpg
   saita_sinya:
+    key: saita_sinya
     room: C05
     name: 斉田真也
     name_kana: サイタシンヤ
@@ -215,6 +227,7 @@ speakers:
       そんな、をみなさんにお渡しします（ネタ有り）
     image: shinya_saita.jpg
   wakaba_akira:
+    key: wakaba_akira
     room: C05
     name: 若葉 章
     name_kana: ワカバ アキラ
@@ -231,6 +244,61 @@ speakers:
     description: |
       弊サークルが開発している高速開発フレームワーク『Flywheel2 (フライホイールツー)』の特徴である、自然に記述できる処理呼び出し時の値の遅延評価システムと、それを用いる事によって得られる、設計の疎結合化および生産性の向上について発表します。
     image: wakaba_akira.png
+  sakata_kohei:
+    key: sakata_kohei
+    room: C05
+    name: 坂田晃平
+    name_kana: サカタコウヘイ
+    team: 株式会社ラクス
+    profile: |
+      株式会社ラクス所属。Laravel + Vue.js + Node.js + Socket.IO で作られたチャットディーラーの開発に従事。Haskell の純粋で透明な世界にあこがれている。
+    link:
+      - type: rakus
+        link: http://tech-blog.rakus.co.jp
+    title: チャットディーラーの高速開発を支えるLaravel
+    subtitle:
+    description: |
+      10年以上PHPでノンフレームワークで開発・運用されてきた主力サービス（メールディーラー）の開発チームが、新規に姉妹サービス（チャットディーラー）を立ち上げる際に Laravel を選択をしました。
+      開発期間半年というスピードが求められる中で、チームが Laravel に抱いた理想と現実、また、Laravel (Blade) と Vue.js の組み合わせにより発生した脆弱性への対応など、Laravel での新規サービス立ち上げの経験を具体的にお伝えします。
+    image: sakata_kohei.JPG
+  terai_ryo:
+    key: terai_ryo
+    room: C01+C02
+    name: 寺井諒
+    name_kana: テライリョウ
+    team: プライム・ストラテジー株式会社
+    profile: |
+      司会マニアとしてPHPカンファレンスに出没していました。
+      PHPカンファレンス関西2013-2014実行委員長
+      PHPと猫が好き。最近ようやく黒い画面も好きになってきました。
+    link:
+      - type: twitter
+        link: https://twitter.com/BiMihoujyun
+    title: PHPStormで始めるテスト環境
+    subtitle:
+    description: |
+      今時のIDEであるPHPStormと最近目にする機会の増えたDockerで快適なテスト環境を構築して開発効率が上がった経験を元に、
+      実際に環境を構築した状態でどういったテストができるのかをご紹介します。
+      PHPStormに興味のある方や最近使い始めた方は是非！
+    image: terai_ryo.jpeg
+  ohara_sota:
+    key: ohara_sota
+    room: C07
+    name: 大原壯太
+    name_kana: オオハラソウタ
+    team: 株式会社メルカリ
+    profile: |
+      株式会社メルカリ / ソウゾウ 所属のエンジニア。普段はJavaScriptを書いています。
+    link:
+      - type: twitter
+        link: https://twitter.com/sottar_
+      - type: facebook
+        link: https://www.facebook.com/ohrst
+    title: フロントエンドエンジニアが伝えたい最近の事情
+    subtitle:
+    description: |
+      昨今のJavaScriptのモダンなフレームワークの登場によりweb開発の複雑化が進んでおり、サーバーサイドとフロントエンドの開発者はより密にコミュニケーションを取りあうことが求められてきています。そこでこのトークでは主にサーバーサイドを書かれている方向けに、昨今のフロントエンド開発で用いられる技術やツール(ES201x, webpack, 型など)、トレンド(SPA, SSR, BFFなど)の紹介を行った後、実際に開発を円滑にすすめるために取り組んでいることについてお話したいと思います。
+    image: ohara_sota.jpeg
   tba:
     name: TBA
     name_kana: TBA
