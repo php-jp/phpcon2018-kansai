@@ -99,7 +99,7 @@
 
             ],
             trackb: [
-              this.$store.state.speakers.tba,
+              this.$store.state.speakers.sakata_kohei,
               this.$store.state.speakers.wakaba_akira,
             ],
             trackc: this.$store.state.speakers.goto_hidenori,
@@ -122,9 +122,9 @@
             times:[
               "14:45",
             ],
-            tracka: this.$store.state.speakers.tba,
+            tracka: this.$store.state.speakers.terai_ryo,
             trackb: this.$store.state.speakers.saita_sinya,
-            trackc: this.$store.state.speakers.tba,
+            trackc: this.$store.state.speakers.ohara_sota,
           },
           {
             times:[
