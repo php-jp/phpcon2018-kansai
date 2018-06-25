@@ -19,6 +19,10 @@
   color: $color;
   background: $backgound;
   cursor: pointer;
+  i {
+    margin-right: .3em;
+    font-size: 1.4em;
+  }
   @include desktop {
     min-width: 210px;
   }

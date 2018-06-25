@@ -20,7 +20,7 @@
         <p class="home-Wanted_Description">間もなく開催 PHPカンファレンス関西 2018<br>本編最後のコンテンツ、LT参加者募集中です！</p>
         <a class="home-Wanted_Speaker" href="https://goo.gl/forms/jfF5X8kH56glakzY2" target="_blank">
           <i class="fa fa-microphone" aria-hidden="true"></i>
-          <span>&nbsp;LT募集 申し込み</span>
+          <span>&nbsp;LT登壇申込み</span>
         </a>
       </div>
     </div>
