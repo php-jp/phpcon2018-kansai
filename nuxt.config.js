@@ -68,7 +68,7 @@ module.exports = {
       '/session/nakashima_rin',
       '/session/sakakibara_masahiko',
       '/session/takahashi_kunihiko',
-      '/session/saita_shinya',
+      '/session/ishihara_yuki',
       '/session/wakaba_akira',
       '/session/sakata_kohei',
       '/session/terai_ryo',

@@ -123,7 +123,7 @@
               "14:45",
             ],
             tracka: this.$store.state.speakers.terai_ryo,
-            trackb: this.$store.state.speakers.saita_shinya,
+            trackb: this.$store.state.speakers.ishihara_yuki,
             trackc: this.$store.state.speakers.ohara_sota,
           },
           {

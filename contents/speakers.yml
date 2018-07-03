@@ -205,18 +205,19 @@ speakers:
     description: |
       みなさん、CIを利用していますか？ 単純にコーディングスタイルのチェック、文法チェック、テストを行うだけではなく、様々な用途でCIを利用してみませんか？
     image: takahashi_kunihiko.jpg
-  saita_shinya:
-    key: saita_shinya
+  ishihara_yuki:
+    key: ishihara_yuki
     room: C05
-    name: 斉田真也
-    name_kana: サイタシンヤ
+    name: 石原裕己
+    name_kana: イシハラユウキ
     team: 株式会社ロックオン
     profile: |
-      金融系開発を経て、ここ5~6年はWeb開発に従事。
-      PHPは好きだし、PHP以外の言語も好き。プライベートではしょうもないツールやゲームの開発をしています。好きなツールは「Google Analytics」嫌いな言葉は「Permission Denied」将来はシェル芸人になりたい。
+      学生時代営業を経験し、「自分で作ったものを自分で売りたい」と思い、株式会社ロックオンのエンジニアになる。
+      開発のみならず、運用やテクニカルサポートなど幅広く経験しています。悪く言えば器用貧乏・・・。
+      入社時からずっとPHPを書いています。
     link:
       - type: facebook
-        link: https://www.facebook.com/saita.shinya
+        link: https://www.facebook.com/people/Yuki-Ishihara/100004487943369
     title: 上司から「なんでPHPなの？」と言われたら
     subtitle: PHP弾劾を受けた時に切り返す、伝家の宝刀。いや、諸刃の剣
     description: |
@@ -225,7 +226,7 @@ speakers:
       「いや、PHPじゃないと駄目なんです！！」 と。
       ぶっちゃけPHPでないと行けない理由なんてものはありません。でも、PHPerがPHPを選択するのには理由があるのです。
       そんな、をみなさんにお渡しします（ネタ有り）
-    image: shinya_saita.jpg
+    image: ishihara_yuki.png
   wakaba_akira:
     key: wakaba_akira
     room: C05
