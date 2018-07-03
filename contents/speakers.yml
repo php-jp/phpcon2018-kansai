@@ -17,8 +17,8 @@ speakers:
     description: |
       受託時代〜会社員時代を通して、いつも「(速さ|早さ)は力」を掲げて開発しています。そのために実践していることを発表したいと思います。
     image: hishida_hiromi.jpg
-  takahasi_yugo:
-    key: takahasi_yugo
+  takahashi_yugo:
+    key: takahashi_yugo
     room: C01+C02
     name: 高橋侑吾
     name_kana: タカハシユウゴ
@@ -35,12 +35,12 @@ speakers:
       本セッションでは高負荷のソーシャルゲームアプリのバックエンド開発で得た知見をもとに、PHPによるWebアプリケーションに対するパフォーマンスチューニングの重要性、考え方、監視、負荷試験などについて基礎的な内容をお話します。
       個々の具体的なチューニング技法の紹介というよりも、そのチューニングに至るまでの考え方や負荷に対するアプローチの仕方にフォーカスしたいと思います。
     image: takahashi_yugo.jpg
-  sugita_sota:
-    key: sugita_sota
+  sugiura_sota:
+    key: sugiura_sota
     room: C01+C02
     name: 杉浦颯太
     name_kana: スギウラソウタ
-    team: 株株式会社メルカリ
+    team: 株式会社メルカリ
     profile: |
       株式会社メルカリに所属するバックエンドエンジニア。日本メルカリチームに所属しPHPを書いている。趣味はJavaScriptで将来の夢はJavaScriptになること。
     link:
@@ -97,8 +97,8 @@ speakers:
     description: |
       2007年に開設されたイラストSNS「pixiv」は当初からフレームワークなしのPHPで構築され、現在まで引き継がれてきました。フレームワークの専門家によって設計されたわけではない「ふつうのPHP」がどのように発展し、継続的な開発のためにメンテナンス性やテストなどの問題と向き合ってきたかについて、技術的な概要を紹介いたします。
     image: usami_kenta.png
-  matuhuzi_hideharu:
-    key: matuhuzi_hideharu
+  matsufuji_hideharu:
+    key: matsufuji_hideharu
     room: C01+C02
     name: 松藤秀治
     name_kana: マツフジヒデハル
@@ -113,8 +113,8 @@ speakers:
     description: |
       今やエンジニアは引く手あまたです。このカンファレンスでもたくさんの募集が出ていると思います。エンジニアを増やすために初心者を育成することは今や業界全体の重要な課題となっています。そこで初心者に何をどう教えるのかについてお話したいと思います。もちろん初心者の方も歓迎です。
     image: matsufuji_hideharu.png
-  suzuki_siniti:
-    key: suzuki_siniti
+  suzuki_shinichi:
+    key: suzuki_shinichi
     room: C05
     name: xinsuzuki
     name_kana: スズキシンイチ
@@ -135,8 +135,8 @@ speakers:
       単に「参加する」だけでなく「手伝ってみる」「主催してみる」のも良いかもしれません。
       さぁ、あなたも今日からコミュニティを通じて、関西を盛り上げてみませんか？
     image: xinsuzuki.jpg
-  kisida_kenitiro:
-    key: kisida_kenitiro
+  kishida_kenichiro:
+    key: kishida_kenichiro
     room: C01+C02
     name: 岸田健一郎
     name_kana: キシダケンイチロウ
@@ -155,8 +155,8 @@ speakers:
       かつてGoogleDeveloperブログにGAEへのPUSH TO DEPROYのやり方が掲載されましたが、後に削除され今では幻です。では今どうやったら良いのか？
       GAEへデプロイする最新情報をお届けします。
     image: kishida_kenichiro.jpg
-  nakasima_rin:
-    key: nakasima_rin
+  nakashima_rin:
+    key: nakashima_rin
     room: C05
     name: 中島凜
     name_kana: ナカシマ リン
@@ -189,8 +189,8 @@ speakers:
       本番環境のサービスで、「データベース接続確立のエラー」「Fatal Error」「500 Internal Server
       Error」などの多くのエラーを見かけます。これはバックエンド技術でフロントエンドを書いたことから起きる悲劇。フロントエンドをちゃんとフロントエンドすれば、こういったエラーを表示しないだけではなく、オフライン表示やモバイルの「ホーム画面に追加」などの多くの恩恵を受けることができます。本セッションでは、PHPの役割を明らかにし、2018年の「ちゃんとWebをするためには」を見直します。
     image: sakakibara_masahiko.jpg
-  takahasi_kunihiko:
-    key: takahasi_kunihiko
+  takahashi_kunihiko:
+    key: takahashi_kunihiko
     room: C07
     name: 高橋邦彦
     name_kana: タカハシクニヒコ
@@ -205,8 +205,8 @@ speakers:
     description: |
       みなさん、CIを利用していますか？ 単純にコーディングスタイルのチェック、文法チェック、テストを行うだけではなく、様々な用途でCIを利用してみませんか？
     image: takahashi_kunihiko.jpg
-  saita_sinya:
-    key: saita_sinya
+  saita_shinya:
+    key: saita_shinya
     room: C05
     name: 斉田真也
     name_kana: サイタシンヤ
@@ -299,6 +299,38 @@ speakers:
     description: |
       昨今のJavaScriptのモダンなフレームワークの登場によりweb開発の複雑化が進んでおり、サーバーサイドとフロントエンドの開発者はより密にコミュニケーションを取りあうことが求められてきています。そこでこのトークでは主にサーバーサイドを書かれている方向けに、昨今のフロントエンド開発で用いられる技術やツール(ES201x, webpack, 型など)、トレンド(SPA, SSR, BFFなど)の紹介を行った後、実際に開発を円滑にすすめるために取り組んでいることについてお話したいと思います。
     image: ohara_sota.jpeg
+  fujiwara_yoshinori:
+    key: fujiwara_yoshinori
+    room: C01+C02
+    name: 藤原吉規
+    name_kana: フジワラヨシノリ
+    team: アマゾン ウェブ サービス ジャパン株式会社
+    profile: |
+      SIerを10年、その後6年間ビジネス向けチャットサービス事業を行う関西のスタートアップで、大規模PHPアプリケーションの開発/運用に従事。現在はソリューション アーキテクトとして、AWSの各種サービスの利用を推進しています。
+    link:
+      - type: AWS
+        link: https://aws.amazon.com/jp/
+    title: PHPアプリケーションのコンテナ化入門
+    subtitle:
+    description: |
+      マイクロサービスやCI/CDの実現のために検討されることが多いコンテナ技術ですが、実際に利用する際にはコンテナホストの管理をはじめ、可用性や拡張性、セキュリティなどいくつかの課題があります。本セッションでは、コンテナを使ったことがない方、またはほとんど知らない方向けに、コンテナが注目されている背景および基本的な技術概要、課題に対してAWSのコンテナ管理サービスでどう解決することができるのか、についてご紹介します
+    image: fujiwaraYoshinori.png
+  okamoto_mitsuhiro:
+    key: okamoto_mitsuhiro
+    room: C01+C02
+    name: 岡本充洋
+    name_kana: オカモトミツヒロ
+    team: 株式会社セールスフォース・ドットコム
+    profile: |
+      SalesforceでDeveloper Evangelistをやっています。Herokuは実はSalesforceのサービスなのです。すぐにアプリ作りたいときは圧倒的に便利ですよ。
+    link:
+      - type: twitter
+        link: https://twitter.com/mitsuhiro
+    title: HerokuでPHPアプリ開発速度を倍にする
+    subtitle:
+    description: |
+      PHPアプリの開発速度をあげたい... 誰もが持つ悩みにHerokuの継続的デリバリー機能が役立ちます。Githubで開発をしているだけで、あとは勝手にHerokuがテスト環境の準備や実行、プルリクエストの検証環境構築、本番環境へのリリース準備などをやってくれます。Herokuをうまく使って、PHP開発速度を格段に向上させましょう。
+    image: MitsuhiroOkamoto.png
   tba:
     name: TBA
     name_kana: TBA
