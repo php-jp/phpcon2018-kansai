@@ -63,12 +63,12 @@
               "11:35",
             ],
             tracka: [
-              this.$store.state.speakers.matuhuzi_hideharu,
-              this.$store.state.speakers.sugita_sota,
+              this.$store.state.speakers.matsufuji_hideharu,
+              this.$store.state.speakers.sugiura_sota,
 
             ],
             trackb: [
-              this.$store.state.speakers.nakasima_rin,
+              this.$store.state.speakers.nakashima_rin,
               this.$store.state.speakers.hishida_hiromi,
             ],
             trackc: this.$store.state.speakers.sakakibara_masahiko,
@@ -94,8 +94,8 @@
               "13:55",
             ],
             tracka: [
-              this.$store.state.speakers.takahasi_yugo,
-              this.$store.state.speakers.tba,
+              this.$store.state.speakers.takahashi_yugo,
+              this.$store.state.speakers.fujiwara_yoshinori,
 
             ],
             trackb: [
@@ -123,7 +123,7 @@
               "14:45",
             ],
             tracka: this.$store.state.speakers.terai_ryo,
-            trackb: this.$store.state.speakers.saita_sinya,
+            trackb: this.$store.state.speakers.saita_shinya,
             trackc: this.$store.state.speakers.ohara_sota,
           },
           {
@@ -147,15 +147,15 @@
               "16:20",
             ],
             tracka: [
-              this.$store.state.speakers.tba,
-              this.$store.state.speakers.kisida_kenitiro,
+              this.$store.state.speakers.okamoto_mitsuhiro,
+              this.$store.state.speakers.kishida_kenichiro,
 
             ],
             trackb: [
-              this.$store.state.speakers.suzuki_siniti,
+              this.$store.state.speakers.suzuki_shinichi,
               this.$store.state.speakers.usami_kenta,
             ],
-            trackc: this.$store.state.speakers.takahasi_kunihiko,
+            trackc: this.$store.state.speakers.takahashi_kunihiko,
           },
           {
             times: [

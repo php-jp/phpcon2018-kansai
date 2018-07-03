@@ -58,18 +58,23 @@ module.exports = {
   generate: {
     routes: [
       '/session/hishida_hiromi',
-      '/session/takahasi_yugo',
-      '/session/sugita_sota',
+      '/session/takahashi_yugo',
+      '/session/sugiura_sota',
       '/session/goto_hidenori',
       '/session/usami_kenta',
-      '/session/matuhuzi_hideharu',
-      '/session/suzuki_siniti',
-      '/session/kisida_kenitiro',
-      '/session/nakasima_rin',
+      '/session/matsufuji_hideharu',
+      '/session/suzuki_shinichi',
+      '/session/kishida_kenichiro',
+      '/session/nakashima_rin',
       '/session/sakakibara_masahiko',
-      '/session/takahasi_kunihiko',
-      '/session/saita_sinya',
-      '/session/wakaba_akira'
+      '/session/takahashi_kunihiko',
+      '/session/saita_shinya',
+      '/session/wakaba_akira',
+      '/session/sakata_kohei',
+      '/session/terai_ryo',
+      '/session/ohara_sota',
+      '/session/fujiwara_yoshinori',
+      '/session/okamoto_mitsuhiro',
     ]
   },
 };
