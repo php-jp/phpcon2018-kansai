@@ -8,7 +8,7 @@
             <img class="ttsession--img" v-lazy="`/images/speakers/${session.image}`" v-if="session.image">
             <span class="ttsession--name">{{session.name}}</span>
         </div>
-        <router-link :to="`/session/`" class="ttsession--linksheet"></router-link>
+        <router-link v-if="session.key" :to="`/session/${session.key}`" class="ttsession--linksheet"></router-link>
     </div>
     <div class="ttsession tt_else" v-else>
         <div class="ttsession--track">{{floor}}</div>
@@ -22,7 +22,8 @@
   export default {
     props: ["session", "floor"],
     data() {
-      return {}
+      return {
+      }
     },
     computed:{
       sessionClass(){
@@ -30,7 +31,7 @@
           ttsession: true,
           inactive: this.session && !this.session.title
         }
-      }
+      },
     },
     components: {
       TimeTableRow
@@ -135,7 +136,7 @@
             padding: 2px 0;
         }
         .ttsession--linksheet {
-            display: none;
+            /*display: none;*/
             border-right: $link-border-size solid $clr_main;
             border-bottom: $link-border-size solid $clr_main;
             &::after {
@@ -167,7 +168,7 @@
             padding: 2px 0;
         }
         .ttsession--linksheet {
-            display: none;
+            /*display: none;*/
             border-right: $link-border-size solid $clr_accent;
             border-bottom: $link-border-size solid $clr_accent;
             &::after {
@@ -198,7 +199,6 @@
             padding: 2px 0;
         }
         .ttsession--linksheet {
-            display: none;
             border-right: $link-border-size solid $clr_base;
             border-bottom: $link-border-size solid $clr_base;
             &::after {
