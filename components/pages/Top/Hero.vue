@@ -19,7 +19,7 @@
     <div class="home-Title_CloudRight"></div>
     <div class="home-Title_Wave"></div>
     <div class="home-Title_Elephants">
-      <a class="home-Title_Attention" href="#home-Wanted">LT登壇者募集中！</a>
+      <span class="home-Title_Attention">開催直前！</span>
       <div class="home-Title_Elephant"></div>
     </div>
   </div>
@@ -219,12 +219,10 @@
       border-radius: 10px;
       font-weight: bold;
       color: $clr_base;
-      text-decoration: none;
       text-align: center;
       background: $clr_accent;
       position: relative;
       top: -60px;
-      text-decoration: underline;
 
       &::after {
         display: inline-block;
