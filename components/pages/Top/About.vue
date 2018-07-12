@@ -15,14 +15,6 @@
           <a href="http://conference.kphpug.jp/2011/" rel="noopener" target="_blank">2011</a>
         </div>
       </div>
-      <div class="home-Wanted" id="home-Wanted">
-        <h2 class="home-Wanted_Title">Wanted!</h2>
-        <p class="home-Wanted_Description">間もなく開催 PHPカンファレンス関西 2018<br>本編最後のコンテンツ、LT参加者募集中です！</p>
-        <a class="home-Wanted_Speaker" href="https://goo.gl/forms/jfF5X8kH56glakzY2" target="_blank">
-          <i class="fa fa-microphone" aria-hidden="true"></i>
-          <span>&nbsp;LT登壇申込み</span>
-        </a>
-      </div>
     </div>
   </div>
 </template>
