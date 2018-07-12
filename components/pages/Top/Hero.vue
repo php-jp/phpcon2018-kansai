@@ -11,7 +11,7 @@
       <div class="home-Title_ticket">
         <a href="https://phpcon-kansai-2018.peatix.com/" target="_blank" class="home-Title_ticketBtn">
           <i class="fa fa-ticket" aria-hidden="true"></i>
-          <span>参加チケット好評発売中！</span>
+          <span>参加チケット完売御礼！</span>
         </a>
       </div>
     </div>
