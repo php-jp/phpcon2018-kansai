@@ -19,7 +19,7 @@
     <div class="home-Title_CloudRight"></div>
     <div class="home-Title_Wave"></div>
     <div class="home-Title_Elephants">
-      <span class="home-Title_Attention">開催直前！</span>
+      <span class="home-Title_Attention">満員御礼！</span>
       <div class="home-Title_Elephant"></div>
     </div>
   </div>
