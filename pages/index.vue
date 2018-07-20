@@ -6,6 +6,7 @@
     <sec-time-table></sec-time-table>
     <sec-access></sec-access>
     <sec-sponsor></sec-sponsor>
+    <sec-staff></sec-staff>
     <sec-share></sec-share>
     <sec-follow></sec-follow>
     <p-footer></p-footer>
@@ -19,6 +20,7 @@
   import secTimeTable from '~/components/pages/Top/TimeTable.vue'
   import secAccess from '~/components/pages/Top/Access.vue'
   import secSponsor from '~/components/pages/Top/Sponsor.vue'
+  import secStaff from '~/components/pages/Top/Staff.vue'
   import secShare from '~/components/pages/Top/Share.vue'
   import secFollow from '~/components/pages/Top/Follow.vue'
   import pFooter from '~/components/Footer.vue'
@@ -33,6 +35,7 @@
           secSponsor,
           secShare,
           secFollow,
+          secStaff,
           pFooter
       },
       head: {
