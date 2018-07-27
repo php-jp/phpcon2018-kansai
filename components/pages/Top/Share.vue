@@ -21,9 +21,10 @@
   @import "~assets/scss/library/_mixin.scss";
 
   .home-Share {
-    padding: 70px 0;
+    @include secPaddiong;
     width: auto;
     background-color: #00C5AC;
+    position: relative;
 
     &_Wave {
       width: 100%;
@@ -31,8 +32,8 @@
       background-image: url("~/assets/images/wavyLine-keyColor.png");
       background-repeat: repeat-x;
       background-size: contain;
-      position: relative;
-      top: -90px;
+      position: absolute;
+      bottom:100%
     }
 
     &_Title {

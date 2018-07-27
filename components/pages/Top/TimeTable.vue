@@ -5,10 +5,12 @@
       <h2 class="home-TimeTable_Title">TIME TABLE</h2>
       <p class="home-TimeTable_Description">初心者から上級者まで楽しめるセッションが目白押し！これから始めようと思っていたフレームワークや、気になっていた技術についての情報が得られるかも！？</p>
       <div class="home-TimeTable_Link">
-        <a href="https://twitter.com/phpcon_kansai" target="_blank" class="home-TimeTable_Anchor">
+        <router-link
+          to="/timeTable"
+          class="home-TimeTable_Anchor">
           <i class="fa fa-calendar-check-o" aria-hidden="true"></i>
           <span>&nbsp;タイムテーブルを確認</span>
-        </a>
+        </router-link>
       </div>
     </div>
   </div>
@@ -19,9 +21,10 @@
   @import "~assets/scss/library/_mixin.scss";
 
   .home-TimeTable {
-    padding: 70px 0 70px 0;
+    @include secPaddiong;
     width: auto;
     background: $clr_baseWhite;
+    position: relative;
 
     &_Wave {
       width: 100%;
@@ -29,8 +32,8 @@
       background-image: url("~/assets/images/wavyLine-white.png");
       background-repeat: repeat-x;
       background-size: contain;
-      position: relative;
-      top: -90px;
+      position: absolute;
+      bottom:100%
     }
 
     &_Title {

@@ -6,25 +6,25 @@
       <div class="home-Sponsor_Sponsor">
         <div class="home-Sponsor_Platinum">
           <h3>プラチナスポンサー</h3>
-          <a class="home-Sponsor_Large" v-for="(sponsor,index) in platinum" :key="index" :href="sponsor.link" target="_blank">
+          <a class="home-Sponsor_Large" v-for="(sponsor,index) in platinum" :key="index" :href="sponsor.link" rel="noopener" target="_blank">
             <img class="home-Sponsor_Image" v-lazy="'/images/sponsors/platinum/'+sponsor.image" :title="sponsor.image">
           </a>
         </div>
         <div class="home-Sponsor_Gold">
           <h3>ゴールドスポンサー</h3>
-          <a class="home-Sponsor_Medium" v-for="(sponsor,index) in gold" :key="index" :href="sponsor.link" target="_blank">
+          <a class="home-Sponsor_Medium" v-for="(sponsor,index) in gold" :key="index" :href="sponsor.link" rel="noopener" target="_blank">
             <img class="home-Sponsor_Image" v-lazy="'/images/sponsors/gold/'+sponsor.image" :title="sponsor.image">
           </a>
         </div>
         <div class="home-Sponsor_Silver">
           <h3>シルバースポンサー</h3>
-          <a class="home-Sponsor_Small" v-for="(sponsor,index) in silver" :key="index" :href="sponsor.link" target="_blank">
+          <a class="home-Sponsor_Small" v-for="(sponsor,index) in silver" :key="index" :href="sponsor.link" rel="noopener" target="_blank">
             <img class="home-Sponsor_Image" v-lazy="'/images/sponsors/silver/'+sponsor.image" :title="sponsor.image">
           </a>
         </div>
         <div class="home-Sponsor_Media">
           <h3>メディアスポンサー</h3>
-          <a class="home-Sponsor_Small" v-for="(sponsor,index) in media" :key="index" :href="sponsor.link" target="_blank">
+          <a class="home-Sponsor_Small" v-for="(sponsor,index) in media" :key="index" :href="sponsor.link" rel="noopener" target="_blank">
             <img class="home-Sponsor_Image" v-lazy="'/images/sponsors/media/'+sponsor.image" :title="sponsor.image">
           </a>
         </div>
@@ -57,9 +57,10 @@
   @import "~assets/scss/library/_mixin.scss";
 
   .home-Sponsor {
-    padding: 70px 0 70px 0;
+    @include secPaddiong;
     width: auto;
     background: $clr_baseDark;
+    position: relative;
 
     &_Wave {
       width: 100%;
@@ -67,8 +68,8 @@
       background-image: url("~/assets/images/wavyLine-dark.png");
       background-repeat: repeat-x;
       background-size: contain;
-      position: relative;
-      top: -90px;
+      position: absolute;
+      bottom:100%
     }
 
     &_Title {

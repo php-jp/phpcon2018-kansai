@@ -8,12 +8,18 @@
       <div class="home-Title_Logo"></div>
       <p class="home-Title_SalesCopy">関西PHPerの夏はこれがなくちゃ始まらない！</p>
       <p class="home-Title_Text">7.14 Sat グランフロント大阪</p>
+      <div class="home-Title_ticket">
+        <a href="https://phpcon-kansai-2018.peatix.com/" target="_blank" class="home-Title_ticketBtn">
+          <i class="fa fa-ticket" aria-hidden="true"></i>
+          <span>参加チケット完売御礼！</span>
+        </a>
+      </div>
     </div>
     <div class="home-Title_CloudLeft"></div>
     <div class="home-Title_CloudRight"></div>
     <div class="home-Title_Wave"></div>
     <div class="home-Title_Elephants">
-      <a class="home-Title_Attention" href="#home-Wanted">スポンサー募集中！</a>
+      <span class="home-Title_Attention">満員御礼！</span>
       <div class="home-Title_Elephant"></div>
     </div>
   </div>
@@ -27,10 +33,10 @@
     width: 100%;
     background-color: $clr_main;
     position: relative;
-    height: 580px;
+    height: 630px;
     @include desktop {
       width: 100%;
-      height: 720px;
+      height: 840px;
     }
 
     .st-Container {
@@ -89,7 +95,7 @@
       margin-top: 40px;
       margin-bottom: 40px;
       width: 230px;
-      height: 270px;
+      height: 240px;
       background-image: url("/images/title.svg");
       background-repeat: no-repeat;
       background-size: contain;
@@ -113,6 +119,20 @@
       @include desktop() {
       }
     }
+    .home-Title_ticket {
+      padding: 20px;
+      @include desktop {
+        padding: 40px;
+      }
+    }
+    .home-Title_ticketBtn {
+      @include button();
+      font-size: 1.6rem;
+      @include desktop {
+        font-size: 1.8rem;
+      }
+    }
+
 
     .home-Title_CloudLeft {
       min-width: 100px;
@@ -159,6 +179,9 @@
       background-size: contain;
       position: absolute;
       bottom: -30px;
+      @include desktop {
+        max-height: 120px;
+      }
       &::before {
         content: "";
         display: block;
@@ -196,7 +219,6 @@
       border-radius: 10px;
       font-weight: bold;
       color: $clr_base;
-      text-decoration: none;
       text-align: center;
       background: $clr_accent;
       position: relative;
