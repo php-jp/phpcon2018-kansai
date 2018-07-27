@@ -43,6 +43,9 @@ body{
   color: #fff;
   background-color: $clr_main;
   text-align: center;
+  @include desktop {
+    font-size: 1.6rem;
+  }
 }
 
 
